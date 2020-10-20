@@ -12,5 +12,5 @@
 - 5
 
 ```js
-const x = 5;
+const x = 10;
 ```
