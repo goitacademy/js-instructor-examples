@@ -99,7 +99,7 @@ console.log(poly.login); // Polycutie
 }
 ```
 
-Добавь методы `addNote(note)`, `removeNote(text)` и `updateNote(oldText, newText)`.
+Добавь методы `addNote(note)`, `removeNote(text)` и `updateNotePriority(text, newPriority)`.
 
 ```js
 const myNotes = new Notes([]); 
@@ -110,9 +110,9 @@ console.log(myNotes.items);
 myNotes.addNote({ text: 'Моя вторая заметка', priority: Notes.Priority.NORMAL })
 console.log(myNotes.items); 
 
-myNotes.removeNote(''Моя первая заметка');
+myNotes.removeNote('Моя первая заметка');
 console.log(myNotes.items); 
 
-myNotes.updateNote('Моя вторая заметка', 'Моя обновлённая вторая заметка');
+myNotes.updateNote('Моя вторая заметка', Notes.Priority.HIGH);
 console.log(myNotes.items); 
 ```
