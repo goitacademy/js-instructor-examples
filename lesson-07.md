@@ -2,14 +2,16 @@
 
 ## Пример 1 - Коллбек функции
 
-Напишите две функции: 
+Напишите две функции:
 
-- `letMeSeeYourName(callback)` - спрашивает имя пользователя через `prompt` и вызывает коллбек ф-цию `callback`
-- `greet(name)` - коллбек принимающий имя и логирующий в консоль строку `"Привет" + name`
+- `letMeSeeYourName(callback)` - спрашивает имя пользователя через `prompt` и
+  вызывает коллбек ф-цию `callback`
+- `greet(name)` - коллбек принимающий имя и логирующий в консоль строку
+  `"Привет" + name`
 
 ```js
 function letMeSeeYourName(callback) {
-  const name = prompt("Введите ваше имя: ", '');
+  const name = prompt('Введите ваше имя: ', '');
   callback(name);
 }
 
@@ -24,17 +26,20 @@ letMeSeeYourName(greet);
 
 Напишите две функции:
 
-- `makeProduct(name, price, callback)` - принимает имя и цену товара, а также колбек. Функция создаёт обьект товара, добавляя ему уникальный идентификатор в свойство `id` и вызывает колбек передавая ему созданный обьект.
-- `showProduct(product)` - коллбек принимающий обьект продукта и логирующий его в консоль 
+- `makeProduct(name, price, callback)` - принимает имя и цену товара, а также
+  колбек. Функция создаёт обьект товара, добавляя ему уникальный идентификатор в
+  свойство `id` и вызывает колбек передавая ему созданный обьект.
+- `showProduct(product)` - коллбек принимающий обьект продукта и логирующий его
+  в консоль
 
 ```js
 function makeProduct(name, price, callback) {
   const product = {
     id: Date.now(),
     name,
-    price
+    price,
   };
-  
+
   callback(product);
 }
 
@@ -47,8 +52,10 @@ makeProduct('Холодильник', 10000, showProduct);
 
 ## Пример 3 - Замыкания и каррирование
 
-Выполните рефакторинг функции makeDishWithShef(shefName, dish) так, чтобы не нужно было каждый раз передавать имя шефа. 
-Напишите функцию makeShef(shefName), которая возвращает другую функцию makeDish(dish), помнящую имя шефа при её вызове.
+Выполните рефакторинг функции makeDishWithShef(shefName, dish) так, чтобы не
+нужно было каждый раз передавать имя шефа. Напишите функцию makeShef(shefName),
+которая возвращает другую функцию makeDish(dish), помнящую имя шефа при её
+вызове.
 
 ```js
 function makeDishWithShef(shefName, dish) {
@@ -86,8 +93,8 @@ const product = {
   price: 5000,
   showPrice() {
     console.log(price);
-  }
-}
+  },
+};
 
 product.showPrice();
 ```
@@ -101,13 +108,36 @@ const product = {
   price: 5000,
   showPrice() {
     console.log(this.price);
-  }
-}
-
+  },
+};
 
 function callAction(action) {
   action();
 }
 
 callAction(product.showPrice);
+```
+
+## Пример 4 - Стрелочные функции (explicit return)
+
+Выполните рефакторинг заменив объявление функции на стрелочную функцию.
+
+```js
+function checkNumbers(a, b) {
+  if (a > b) {
+    return `число ${a} больше ${b}`;
+  }
+
+  return `число ${b} больше ${a}`;
+}
+```
+
+## Пример 5 - Стрелочные функции (implicit return)
+
+Выполните рефакторинг заменив объявление функции на стрелочную функцию.
+
+```js
+function mult(x, y, z) {
+  return x * y * z;
+}
 ```
