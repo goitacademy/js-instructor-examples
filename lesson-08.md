@@ -1,79 +1,223 @@
-# Модуль 4. Занятие 2. Коллбек функции. Замыкания. this
+# Модуль 4. Занятие 8. Перебирающие методы массива
 
-## Пример 1 - Коллбек функции
-
-Напишите функцию `each(array, callback)`, которая первым параметром принимает массив, а вторым - функцию, которая применится к каждому элементу массива. Функция each должна вернуть новый массив, элементами которого будут результаты вызова коллбека.
+## Коллекция объектов для всех примеров с автомобилями
 
 ```js
-function each(array, callback) {
-  const newArr = [];
-
-  for (let i = 0; i < array.length; i += 1) {
-    newArr.push(callback(array[i]));
-  }
-
-  return newArr;
-}
-
-console.log(each([64, 49, 36, 25, 16], element => element * 2));
-console.log(each([64, 49, 36, 25, 16], element => element - 10));
-console.log(each([64, 49, 36, 25, 16], element => Math.sqrt(element)));
-console.log(each([1.5, 2.1, 16.4, 9.7, 11.3], element => Math.ceil(element)));
-console.log(each([1.5, 2.1, 16.4, 9.7, 11.3], element => Math.floor(element)));
+const cars = [
+  {
+    make: 'Honda',
+    model: 'CR-V',
+    type: 'suv',
+    amount: 14,
+    price: 24045,
+    onSale: true,
+  },
+  {
+    make: 'Honda',
+    model: 'Accord',
+    type: 'sedan',
+    amount: 2,
+    price: 22455,
+    onSale: true,
+  },
+  {
+    make: 'Mazda',
+    model: 'Mazda 6',
+    type: 'sedan',
+    amount: 8,
+    price: 24195,
+    onSale: false,
+  },
+  {
+    make: 'Mazda',
+    model: 'CX-9',
+    type: 'suv',
+    amount: 7,
+    price: 31520,
+    onSale: true,
+  },
+  {
+    make: 'Toyota',
+    model: '4Runner',
+    type: 'suv',
+    amount: 19,
+    price: 34210,
+    onSale: false,
+  },
+  {
+    make: 'Toyota',
+    model: 'Sequoia',
+    type: 'suv',
+    amount: 16,
+    price: 45560,
+    onSale: false,
+  },
+  {
+    make: 'Toyota',
+    model: 'Tacoma',
+    type: 'truck',
+    amount: 4,
+    price: 24320,
+    onSale: true,
+  },
+  {
+    make: 'Ford',
+    model: 'F-150',
+    type: 'truck',
+    amount: 11,
+    price: 27110,
+    onSale: true,
+  },
+  {
+    make: 'Ford',
+    model: 'Fusion',
+    type: 'sedan',
+    amount: 13,
+    price: 22120,
+    onSale: true,
+  },
+  {
+    make: 'Ford',
+    model: 'Explorer',
+    type: 'suv',
+    amount: 6,
+    price: 31660,
+    onSale: false,
+  },
+];
 ```
 
-## Пример 2 - Замыкания
+## Example 1 - Метод map
 
-Напишите функцию `makeCounter()`, которая возвращает другую функцию, которая считает и логирует количество своих вызовов.
+Пусть функция `getModels` возвращает массив моделей (поле model) всех
+автомобилей.
 
 ```js
-function makeCounter() {
-  let i = 0;
-  return function counter() {
-    i += 1;
-    return i;
-  };
-}
+const getModels = cars => {};
 
-const counter = makeCounter();
-
-console.log(counter());
-console.log(counter());
-console.log(counter());
+console.table(getModels(cars));
 ```
 
-## Пример 3 - Замыкания
+## Example 2 - Метод map
 
-Напишите функцию `savePassword(password)` которая принимает пароль и возвращает внутреннюю функцию, которая принимает строку и возвращает буль `true`, если строка совпадает с сохраненным паролем и `false` - если не совпадает.
-
+Пусть функция `makeCarsWithDiscount` возвращает новый массив объектов с изменным
+значением свойства `price` в зависимости от переданной скидки.
 
 ```js
-function makePasswordChecker(password) {
-  return function checkPassword(input) {
-    return input === password;
-  };
-}
+const makeCarsWithDiscount = (cars, discount) => {};
+
+console.table(makeCarsWithDiscount(cars, 0.2));
+console.table(makeCarsWithDiscount(cars, 0.4));
 ```
 
-## Пример 4 - Замыкания
+## Example 3 - Метод filter
 
-Напишите функцию для хранения скидки. Функция возвращает другую функцию, которая принимает сумму покупки и возвращает финальную сумму с сохранённой скидкой.
+Пусть функция `filterByPrice` возвращает массив автомобилей цена которых меньше
+чем значение параметра `threshold`.
 
 ```js
-function applyDiscount(discount) {
-  return function (value) {
-    return value - value * discount;
-  };
-}
+const filterByPrice = (cars, threshold) => {};
 
-const withBaseDiscount = applyDiscount(0);
-const withSilverDiscount = applyDiscount(0.05);
-const withGoldDiscount = applyDiscount(0.1);
+console.table(filterByPrice(cars, 30000));
+console.table(filterByPrice(cars, 25000));
+```
 
-console.log(withBaseDiscount(100));
-console.log(withBaseDiscount(200));
-console.log(withSilverDiscount(100));
-console.log(withSilverDiscount(200));
-console.log(withGoldDiscount(100));
-console.log(withGoldDiscount(200));
+## Example 4 - Метод filter
+
+Пусть функция `getCarsWithDiscount` возвращает массив автомобилей свойство
+onSale которых true.
+
+```js
+const getCarsWithDiscount = cars => {};
+
+console.table(getCarsWithDiscount(cars));
+```
+
+## Example 5 - Метод filter
+
+Пусть функция `getCarsWithType` возвращает массив автомобилей тип которых
+совпадает со значением параметра `type`.
+
+```js
+const getCarsWithType = (cars, type) => {};
+
+console.table(getCarsWithType(cars, 'suv'));
+console.table(getCarsWithType(cars, 'sedan'));
+```
+
+## Example 6 - Метод find
+
+```js
+const getCarByModel = (cars, model) => {};
+
+console.log(getCarByModel(cars, 'F-150'));
+console.log(getCarByModel(cars, 'CX-9'));
+```
+
+## Example 7 - Метод sort
+
+Пусть функция `sortByAscendingAmount` возвращает новый массив автомобилей
+отсортированный по возврастанию значения свойства `amount`.
+
+```js
+const sortByAscendingAmount = cars => {};
+
+console.table(sortByAscendingAmount(cars));
+```
+
+## Example 8 - Метод sort
+
+Пусть функция `sortByDescendingPrice` возвращает новый массив автомобилей
+отсортированный по убыванию значения свойства `price`.
+
+```js
+const sortByDescendingPrice = cars => {};
+
+console.table(sortByDescendingPrice(cars));
+```
+
+## Example 9 - Метод sort
+
+Пусть функция `sortByModel` возвращает новый массив автомобилей отсортированный
+по названию модели в алфавитном и обратном алфавитном порядке, в засисимости от
+значения параметра `order`.
+
+```js
+const sortByModel = (cars, order) => {};
+
+console.table(sortByModel(cars, 'asc'));
+console.table(sortByModel(cars, 'desc'));
+```
+
+## Example 10 - Метод reduce
+
+Пусть функция `getTotalAmount` возвращает общее количество автомобилей(значение
+свойств `amount`).
+
+```js
+const getTotalAmount = cars => {};
+
+console.log(getTotalAmount(cars));
+```
+
+## Example 11 - Цепочки методов
+
+Пусть функция `getAvailableCarNames` возвращает массив моделей автомобилей, но
+только тех, которые сейчас на распродаже.
+
+```js
+const getModelsOnSale = cars => {};
+
+console.table(getModelsOnSale(cars));
+```
+
+## Example 12 - Цепочки методов
+
+Пусть функция `getSortedCarsOnSale` возвращает массив автомобилей на распродаже
+(свойство onSale), отсортированных по возрастанию цены.
+
+```js
+const getSortedCarsOnSale = cars => {};
+
+console.table(getSortedCarsOnSale(cars));
 ```
