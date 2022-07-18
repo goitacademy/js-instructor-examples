@@ -1,8 +1,8 @@
-# Модуль 1. Занятие 1. Переменные, типы и операторы
+# Módulo 1. Clase 1. Variables, tipos y operadores
 
-## Example 1 - Математические операторы
+## Ejemplo 1 - Operadores matemáticos
 
-Выведи на экран общее количество яблок и винограда. Разницу яблок и винограда.
+Muestra el número total de manzanas y uvas. La diferencia entre las manzanas y las uvas.
 
 ```js
 const apples = 47;
@@ -13,9 +13,9 @@ const diff = ;
 console.log(diff)
 ```
 
-## Example 2 - Комбинированные операторы
+## Ejemplo 2 - Operadores combinados
 
-Замени выражение переопределения комбинированным оператором `+=`.
+Sustituye la expresión de redefinición por el operador combinado `+=`.
 
 ```js
 let students = 100;
@@ -23,30 +23,29 @@ students = students + 50;
 console.log(students);
 ```
 
-## Example 3 - Приоритет операторов
+## Example 3 - Prioridad de los operadores
 
-Разбери приоритет операторов в инструкции присвоения значения переменной
-`result`.
+Analiza la prioridad de los operadores, en la instrucción para asignar un valor a la variable `result`.
 
 ```js
 const result = 108 + 223 - 2 * 5;
 console.log(result);
 ```
 
-## Example 4 - Класс Math
+## Ejemplo 4 - Clase Math
 
-Напиши скрипт, который выводит в консоль округленные вверх/вниз и т.д. значения
-переменной `value`. Используй методы `Math.floor()`, `Math.ceil()` и
-`Math.round()`. Проверь что будет в консоли при значениях `27.3` и `27.9`.
+Escriba un script que muestre en la consola los valores redondeados hacia abajo/arriba, etc. 
+de la variable `value`. Use los métodos `Math.floor()`, `Math.ceil()` y `Math.round()`.
+Comprueba lo que aparece en la consola con los valores `27.3` y `27.9`.
 
 ```js
 const value = 27.5;
 ```
 
-## Example 5 - Шаблонные строки
+## Ejemplo 5 - Plantilla de cadena
 
-Составь фразу с помощью шаблонных строк `A has B bots in stock`, где A, B -
-переменные вставленные в строку.
+Escriba una frase utilizando una plantilla de cadena `A has B bots in stock`, donde A, B 
+son variables insertadas en la cadena.
 
 ```js
 const companyName = 'Cyberdyne Systems';
@@ -56,17 +55,17 @@ const message = ``;
 console.log(message); // "Cyberdyne Systems has 200 bots in stock"
 ```
 
-## Example 6 - Методы строк и чейнинг
+## Ejemplo 6 - Métodos de cadenas y encadenamiento
 
-Напиши скрипт который рассчитывает индекс массы тела человека. Для этого
-необходимо разделить вес в киллограммах на квадрат высоты человека в метрах.
+Escriba un script que calcule el índice de masa corporal de una persona. Para ello
+divide el peso en kilogramos por el cuadrado de la altura de la persona en metros.
 
-Вес и высота хранятся в переменных `weight` и `height`, но не как числа, а в
-виде строк (специально для задачи). Нецелые числа могут быть заданы в виде
-`24.7` или `24,7`, то есть в качестве разделителя дробной части может быть
-запятая.
+El peso y la altura se almacenan en las variables `weight` y `height`, pero no como
+números, sino como cadenas (específicamente para esta tarea). Los números no enteros se 
+pueden dar en forma de `24.7` o `24,7`, es decir, la parte de la fracción puede estar 
+separada por una coma.
 
-Индекс массиы тела необходимо округлить до одной цифры после запятой;
+El índice de masa corporal debe redondearse para que tenga solo una cifra después de la coma;
 
 ```js
 let weight = '88,3';
@@ -76,9 +75,9 @@ const bmi = ;
 console.log(bmi); // 28.8
 ```
 
-## Example 7 - Операторы сравнения и приведение типов
+## Ejemplo 7 - Operadores de comparación y conversión de tipos
 
-Каким будет результат выражений?
+¿Cuál sería el resultado de las expresiones?
 
 ```js
 console.log(5 > 4);
@@ -112,9 +111,9 @@ console.log(undefined == null);
 console.log(undefined === null);
 ```
 
-## Example 8 - Логические операторы
+## Ejemplo 8 - Operadores lógicos
 
-Каким будет результат выражений?
+¿Cuál sería el resultado de las expresiones?
 
 ```js
 console.log(true && 3);
@@ -138,13 +137,13 @@ console.log((1 && null && 2) > 0);
 console.log(null || (2 && 3) || 4);
 ```
 
-## Example 9 - Значение по умолчанию и оператор нулевого слияния
+## Ejemplo 9 - Valor por defecto y Nullish coalescing operator
 
-Отрефактори код так, чтобы в переменную `value` присваивалось значение
-переменной `incomingValue`, если оно не равно `undefined` или `null`. В
-противном случае должно присваиваться значение `defaultValue`. Проверь работу
-скрипта для слепдующих значений переменной `incomingValue`: null, undefined, 0,
-false. Используй оператор `??` (nullish coalescing operator).
+Refactoriza el código para que a la variable `value` se le asigne el valor de
+la variable `incomingValue` , en caso de que el valor no sea `undefined` o `null`. 
+En caso contrario, se debe asignar el valor `defaultValue`. Comprueba que el script
+funciona para los siguientes valores de la variable `incomingValue`: null, undefined,
+0, false. Utilice el operador `??` (nullish coalescing operator).
 
 ```js
 const incomingValue = 5;
@@ -153,14 +152,14 @@ const value = incomingValue || defaultValue;
 console.log(value);
 ```
 
-## Example 10 - Опертор % и методы строк
+## Ejemplo 10 - Operador % y métodos de cadena
 
-Напиши скрипт который переведёт значение `totalMinutes` (количество минут) в
-строку в формате часов и минут `HH:MM`.
+Escribe un script que traduzca el valor de `totalMinutes` ( cantidad de minutos) en
+una cadena en formato de horas y minutos `HH:MM`.
 
-- 70 покажет 01:10
-- 450 покажет 07:30
-- 1441 покажет 24:01
+- 70 muestra 01:10
+- 450 muestra 07:30
+- 1441 muestra 24:01
 
 ```js
 const totalMinutes = 70;
