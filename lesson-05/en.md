@@ -39,20 +39,19 @@ const salaries = {
 };
 ```
 
-## Example 3 - Массив объектов
+## Example 3 - Array of objects
 
-Напишите ф-цию `calcTotalPrice(stones, stoneName)`, которая принимает массив
-обьектов и строку с названием камня. Ф-ция считает и возвращает общую стоимость
-камней с таким именем, ценой и количеством из обьекта
-
-### Код
+Write a function `calcTotalPrice(stones, stoneName)` that takes an array
+of objects and a string with the name of the stone. The function calculates and returns the total cost
+of stones with the same name, price and quantity from the object
+### Code
 
 ```js
 const stones = [
-  { name: 'Изумруд', price: 1300, quantity: 4 },
-  { name: 'Бриллиант', price: 2700, quantity: 3 },
-  { name: 'Сапфир', price: 400, quantity: 7 },
-  { name: 'Щебень', price: 200, quantity: 2 },
+  { name: 'Emerald', price: 1300, quantity: 4 },
+  { name: 'Diamond', price: 2700, quantity: 3 },
+  { name: 'Sapphire', price: 400, quantity: 7 },
+  { name: 'Rubble', price: 200, quantity: 2 },
 ];
 ```
 
