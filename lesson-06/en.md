@@ -1,9 +1,9 @@
-# Модуль 3 Занятие 6. Деструктуризация и rest/spread
+# Модуль 3 Lesson 6. Destructuring and rest/spread
 
-## Example 1 - Деструктуризация
+## Example 1 - Destructuring
 
-Перепиши функцию так, чтобы она принимала один объект параметров, вместо набора
-независимых аргументов.
+Rewrite the function to take a single parameter object instead of a set
+independent arguments.
 
 ```js
 function calcBMI(weight, height) {
@@ -12,12 +12,12 @@ function calcBMI(weight, height) {
   return Number((numericWeight / numericHeight ** 2).toFixed(1));
 }
 
-// Было
+// It was
 // console.log(calcBMI('88,3', '1.75'));
 // console.log(calcBMI('68,3', '1.65'));
 // console.log(calcBMI('118,3', '1.95'));
 
-// Ожидается
+// Is expected 
 console.log(
   calcBMI({
     weight: '88,3',
@@ -38,10 +38,10 @@ console.log(
 );
 ```
 
-## Example 2 - Деструктуризация
+## Example 2 - Destructuring
 
-Перепиши функцию так, чтобы она принимала один объект параметров, вместо набора
-независимых аргументов.
+Rewrite the function to take a single parameter object instead of a set
+independent arguments.
 
 ```js
 function printContactsInfo(names, phones) {
@@ -52,13 +52,13 @@ function printContactsInfo(names, phones) {
   }
 }
 
-// Было
+// It was
 // printContactsInfo(
 //   'Jacob,William,Solomon,Artemis',
 //   '89001234567,89001112233,890055566377,890055566300',
 // );
 
-// Ожидается
+// Is expected
 printContactsInfo({
   names: 'Jacob,William,Solomon,Artemis',
   phones: '89001234567,89001112233,890055566377,890055566300',
