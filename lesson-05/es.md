@@ -1,18 +1,18 @@
-# Модуль 3. Занятие 1. Объекты
+# Módulo 3. Clase 1. Objetos
 
 <!-- https://github.com/luxplanjay/js-33-qna/blob/03-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B/js/vehicles.js -->
 
-## Example 1 - Основы обьектов
+## Ejemplo 1 - Fundamentos de los objetos
 
-Напиши скрипт, который, для объекта `user`, последовательно:
+Escribe un script que, para el objeto `user`, secuencialmente:
 
-- добавляет поле `mood` со значением `'happy'`
-- заменяет значение `hobby` на `'skydiving'`
-- заменяет значение `premium` на `false`
-- выводит содержимое объекта `user` в формате `ключ:значение` используя
-  `Object.keys()` и `for...of`
+- añade un campo `mood` con el valor `"happy"`.
+- sustituye el valor de `hobby` por `'skydiving'`.
+- sustituye el valor de `premium` por `false`
+- devuelve el contenido del objeto `user` en formato `llave:valor` usando
+  `Object.keys()` y `for...of`
 
-### Код
+### Código
 
 ```js
 const user = {
@@ -23,13 +23,13 @@ const user = {
 };
 ```
 
-## Example 2 - метод Object.values()
+## Ejemplo 2 - Método Object.values()
 
-У нас есть объект, в котором хранятся зарплаты нашей команды. Напишите код для
-суммирования всех зарплат и сохраните результат в переменной sum. Должно
-получиться 390. Если объект `salaries` пуст, то результат должен быть 0.
+Tenemos un objeto que almacena los salarios de nuestro equipo. Escribe el código
+para sumar todos los salarios y almacenar el resultado en la variable sum.
+El resultado debería ser 390. Si el objeto `salaries` está vacío, el resultado debe ser 0.
 
-### Код
+### Código
 
 ```js
 const salaries = {
@@ -39,33 +39,33 @@ const salaries = {
 };
 ```
 
-## Example 3 - Массив объектов
+## Ejemplo 3 - Array de objetos
 
-Напишите ф-цию `calcTotalPrice(stones, stoneName)`, которая принимает массив
-обьектов и строку с названием камня. Ф-ция считает и возвращает общую стоимость
-камней с таким именем, ценой и количеством из обьекта
+Escribe una función `calcTotalPrice(stones, stoneName)` que tome un array de
+objetos y una cadena de nombres de piedras. La función cuenta y devuelve el valor
+total de las piedras con ese nombre, precio y cantidad del objeto.
 
-### Код
+### Código
 
 ```js
 const stones = [
-  { name: 'Изумруд', price: 1300, quantity: 4 },
-  { name: 'Бриллиант', price: 2700, quantity: 3 },
-  { name: 'Сапфир', price: 400, quantity: 7 },
-  { name: 'Щебень', price: 200, quantity: 2 },
+  { name: 'Esmeralda', price: 1300, quantity: 4 },
+  { name: 'Diamante', price: 2700, quantity: 3 },
+  { name: 'Zafiro', price: 400, quantity: 7 },
+  { name: 'Piedra triturada', price: 200, quantity: 2 },
 ];
 ```
 
-## Example 4 - Комплексные задачи
+## Ejemplo 4 - Tareas complejas
 
-Напиши скрипт управления личным кабинетом интернет банка. Есть объект `account`
-в котором необходимо реализовать методы для работы с балансом и историей
-транзакций.
+Escribe un script para gestionar una cuenta bancaria online. Existe un 
+objeto `cuenta` en el que hay que implementar métodos para trabajar con
+el saldo y el historial de transacciones.
 
 ```js
 /*
- * Типов транзацкий всего два.
- * Можно положить либо снять деньги со счета.
+ * Sólo hay dos tipos de transacciones.
+ * Se puede depositar o retirar dinero de la cuenta.
  */
 const Transaction = {
   DEPOSIT: 'deposit',
@@ -73,54 +73,54 @@ const Transaction = {
 };
 
 /*
- * Каждая транзакция это объект со свойствами: id, type и amount
+ * Cada transacción es un objeto con propiedades: id, type и amount
  */
 
 const account = {
-  // Текущий баланс счета
+  // Saldo actual de la cuenta
   balance: 0,
 
-  // История транзакций
+  // Historial de transacciones
   transactions: [],
 
   /*
-   * Метод создает и возвращает объект транзакции.
-   * Принимает сумму и тип транзакции.
+   * El método crea y retorna el objeto de la transacción.
+   * Acepta la suma y el tipo de transacción.
    */
   createTransaction(amount, type) {},
 
   /*
-   * Метод отвечающий за добавление суммы к балансу.
-   * Принимает сумму танзакции.
-   * Вызывает createTransaction для создания объекта транзакции
-   * после чего добавляет его в историю транзакций
+   * Método responsable de añadir el monto al saldo.
+   * Recibe el monto de la transacción.
+   * Llama a createTransaction para crear un objeto de transacción
+   * y después lo añade al historial de transacciones
    */
   deposit(amount) {},
 
   /*
-   * Метод отвечающий за снятие суммы с баланса.
-   * Принимает сумму танзакции.
-   * Вызывает createTransaction для создания объекта транзакции
-   * после чего добавляет его в историю транзакций.
+   * El método responsable de retirar el monto del saldo.
+   * Recibe el monto de la transacción.
+   * Llama a createTransaction para crear un objeto de transacción
+   * y después lo añade al historial de transacciones
    *
-   * Если amount больше чем текущий баланс, выводи сообщение
-   * о том, что снятие такой суммы не возможно, недостаточно средств.
+   * Si amount es mayor que el saldo actual, imprime un mensaje diciendo
+   * que, no es posible retirar esta cantidad, no hay fondos suficientes.
    */
   withdraw(amount) {},
 
   /*
-   * Метод возвращает текущий баланс
+   * El método devuelve el saldo actual
    */
   getBalance() {},
 
   /*
-   * Метод ищет и возвращает объект транзации по id
+   * El método busca y devuelve el objeto de la transacción según su id
    */
   getTransactionDetails(id) {},
 
   /*
-   * Метод возвращает количество средств
-   * определенного типа транзакции из всей истории транзакций
+   * El método devuelve la cantidad de fondos
+   * de determinado tipo de transacción de todo el historial de transacciones
    */
   getTransactionTotal(type) {},
 };
