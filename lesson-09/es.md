@@ -1,10 +1,10 @@
-# Модуль 5. Занятие 9. Контекст вызова функции и this
+# Módulo 5. Clase 9. Contexto de la llamada de una función y this
 
-## Example 1 - Мастерская драгоценностей
+## Ejemplo 1 - Taller de joyería
 
-Напишите метод `calcTotalPrice(stoneName)`, который принимает название камня и
-рассчитывает и возвращает общую стоимость камней с таким именем, ценой и
-количеством из свойства `stones`.
+Escriba un método `calcTotalPrice(stoneName)` que tome el nombre de una piedra
+y calcule y devuelva el precio total de las piedras con ese nombre, precio y
+cantidad según la propiedad `stones`.
 
 ```js
 const chopShop = {
@@ -23,9 +23,9 @@ console.log(chopShop.calcTotalPrice('Sapphire')); // 9800
 console.log(chopShop.calcTotalPrice('Ruby')); // 1600
 ```
 
-## Example 2 - Телефонная книга
+## Ejemplo 2 - Guía telefónica
 
-Выполните рефакторинг методов объекта `phonebook` чтобы код заработал.
+Refactoriza los métodos del objeto `phonebook` para que el código funcione.
 
 ```js
 const phonebook = {
@@ -62,13 +62,13 @@ console.log(
 );
 ```
 
-## Example 3 - Калькулятор
+## Ejemplo 3 - Calculadora
 
-Создайте объект `calculator` с тремя методами:
+Crea un objeto `calculator` con tres métodos:
 
-- `read(a, b)`- принимает два значения и сохраняет их как свойства объекта.
-- `add()` - возвращает сумму сохранённых значений.
-- `mult()` - перемножает сохранённые значения и возвращает результат.
+- `read(a, b)`- toma dos valores y los almacena como propiedades del objeto.
+- `add()` - devuelve la suma de los valores almacenados.
+- `mult()` - multiplica los valores almacenados y devuelve el resultado.
 
 ```js
 const calculator = {};
