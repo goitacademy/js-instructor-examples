@@ -1,16 +1,16 @@
-# Модуль 3. Занятие 1. Объекты
+# Модуль 3. Lesson 1. Objects
 
 <!-- https://github.com/luxplanjay/js-33-qna/blob/03-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B/js/vehicles.js -->
 
-## Example 1 - Основы обьектов
+## Example 1 - Object Basics
 
-Напиши скрипт, который, для объекта `user`, последовательно:
+Write a script that, for the `user` object, successively:
 
-- добавляет поле `mood` со значением `'happy'`
-- заменяет значение `hobby` на `'skydiving'`
-- заменяет значение `premium` на `false`
-- выводит содержимое объекта `user` в формате `ключ:значение` используя
-  `Object.keys()` и `for...of`
+- adds a `mood` field with value `'happy'`
+- replaces the value `hobby` to `'skydiving'`
+- replaces `premium` to `false`
+- prints the contents of the `user` object in `key:value` format using
+  `Object.keys()` and `for...of`
 
 ### Код
 
