@@ -1,8 +1,8 @@
-# Модуль 1. Занятие 1. Переменные, типы и операторы
+# Module 1. Lesson 1. Variables, types and operators 
 
-## Example 1 - Математические операторы
+## Example 1 - Mathematical operators 
 
-Выведи на экран общее количество яблок и винограда. Разницу яблок и винограда.
+Display the total number of apples and grapes on the screen. The difference between apples and grapes.
 
 ```js
 const apples = 47;
@@ -13,9 +13,9 @@ const diff = ;
 console.log(diff)
 ```
 
-## Example 2 - Комбинированные операторы
+## Example 2 - Combined operators
 
-Замени выражение переопределения комбинированным оператором `+=`.
+Replace the override expression with the combined operator `+=`.
 
 ```js
 let students = 100;
@@ -23,9 +23,9 @@ students = students + 50;
 console.log(students);
 ```
 
-## Example 3 - Приоритет операторов
+## Example 3 - Operators Priority
 
-Разбери приоритет операторов в инструкции присвоения значения переменной
+Disassemble operators priority in the variable value assignment  instruction
 `result`.
 
 ```js
@@ -33,7 +33,7 @@ const result = 108 + 223 - 2 * 5;
 console.log(result);
 ```
 
-## Example 4 - Класс Math
+## Example 4 - Math class
 
 Напиши скрипт, который выводит в консоль округленные вверх/вниз и т.д. значения
 переменной `value`. Используй методы `Math.floor()`, `Math.ceil()` и
