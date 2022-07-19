@@ -12,7 +12,7 @@ Write a script that, for the `user` object, successively:
 - prints the contents of the `user` object in `key:value` format using
   `Object.keys()` and `for...of`
 
-### Код
+### Code
 
 ```js
 const user = {
@@ -23,13 +23,13 @@ const user = {
 };
 ```
 
-## Example 2 - метод Object.values()
+## Example 2 -  Object.values() method
 
-У нас есть объект, в котором хранятся зарплаты нашей команды. Напишите код для
-суммирования всех зарплат и сохраните результат в переменной sum. Должно
-получиться 390. Если объект `salaries` пуст, то результат должен быть 0.
+We have an object that stores our team salaries. Write code for
+summing all salaries and store the result in the sum variable. Should
+get 390. If the `salaries` object is empty, then the result should be 0.
 
-### Код
+### Code
 
 ```js
 const salaries = {
