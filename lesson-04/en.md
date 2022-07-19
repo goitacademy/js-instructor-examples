@@ -1,16 +1,15 @@
-# Модуль 2. Занятие 4. Функции
+# Module 2 - Lesson 4 - Functions
 
-## Example 1 - Индекс массы тела
+## Example 1 - Body mass index
+Write a function `calcBMI(weight, height)` that calculates and returns the body mass
+index of a person. To do this, divide the weight in kilograms by
+square of a person's height in meters.
 
-Напиши функцию `calcBMI(weight, height)` которая рассчитывает и возвращает
-индекс массы тела человека. Для этого необходимо разделить вес в киллограммах на
-квадрат высоты человека в метрах.
+The weight and height will be specially passed as strings. Non-integer numbers can be
+specified as `24.7` or `24.7`, i.e. a comma can be used
+as a decimal separator.
 
-Вес и высота будут специально переданы как строки. Нецелые числа могут быть
-заданы в виде `24.7` или `24,7`, то есть в качестве разделителя дробной части
-может быть запятая.
-
-Индекс массы тела необходимо округлить до одной цифры после запятой;
+Body mass index must be rounded to one decimal place;
 
 ```js
 const bmi = calcBMI('88,3', '1.75');
