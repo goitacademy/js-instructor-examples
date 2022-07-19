@@ -55,13 +55,13 @@ logItems(['Mango', 'Poly', 'Ajax']);
 logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
 ```
 
-## Example 5 - Логирование контактов
+## Example 5 - Contact logging
 
-Напиши функцию `printContactsInfo(names, phones)` которая выводит в консоль имя
-и телефонный номер пользователя. В параметры `names` и `phones` будут переданы
-строки имен и телефонных номеров, разделенные запятыми. Порядковый номер имен и
-телефонов в строках указывают на соответствие. Количество имен и телефонов
-гарантированно одинаковое.
+Write a function `printContactsInfo(names, phones)` that prints  to the console the name
+and the user's phone number. The `names` and `phones` parameters will be passed
+strings of names and phone numbers separated by commas. Sequence number of names and
+phone numbers in the rows indicate a match. Number of names and phones
+guaranteed to be the same.
 
 ```js
 function printContactsInfo(names, phones) {}
