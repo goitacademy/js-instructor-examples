@@ -58,7 +58,7 @@ const string = 'Welcome to the future';
 
 ## Ejemplo 6 - Arrays y cadenas
 
-Escriba un script que "devuelva" la cadena (invierta el orden de las letras)
+Escriba un script que "invierta" la cadena (invierta el orden de las letras)
 y la muestre en la consola.
 
 ```js
