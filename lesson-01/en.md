@@ -37,7 +37,7 @@ console.log(result);
 
 Write a script that prints to the console rounded up/down, etc. values
 variable `value`. Use the methods `Math.floor()`, `Math.ceil()` and
-`Math.round()`. Проверьте, что произойдет в консоли для значений «27,3» и «27,9»..
+`Math.round()`. Check what happens in the console for the values "27.3" and "27.9".
 
 ```js
 const value = 27.5;
