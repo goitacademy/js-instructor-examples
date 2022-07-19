@@ -55,16 +55,16 @@ const stones = [
 ];
 ```
 
-## Example 4 - Комплексные задачи
+## Example 4 - Complex tasks
 
-Напиши скрипт управления личным кабинетом интернет банка. Есть объект `account`
-в котором необходимо реализовать методы для работы с балансом и историей
-транзакций.
+Write a script for managing a personal account of an Internet bank. There is an `account` object
+in which it is necessary to implement methods for working with balance and
+transaction history.
 
 ```js
 /*
- * Типов транзацкий всего два.
- * Можно положить либо снять деньги со счета.
+ * There are only two types of transaction.
+ * You can deposit or withdraw money from your account.
  */
 const Transaction = {
   DEPOSIT: 'deposit',
@@ -72,54 +72,54 @@ const Transaction = {
 };
 
 /*
- * Каждая транзакция это объект со свойствами: id, type и amount
+ * Each transaction is an object with properties: id, type and amount
  */
 
 const account = {
-  // Текущий баланс счета
+  // Current account balance
   balance: 0,
 
-  // История транзакций
+  // Transaction History
   transactions: [],
 
   /*
-   * Метод создает и возвращает объект транзакции.
-   * Принимает сумму и тип транзакции.
+   * Method creates and returns a transaction object.
+   * Accepts amount and type of transaction.
    */
   createTransaction(amount, type) {},
 
   /*
-   * Метод отвечающий за добавление суммы к балансу.
-   * Принимает сумму танзакции.
-   * Вызывает createTransaction для создания объекта транзакции
-   * после чего добавляет его в историю транзакций
+   * The method responsible for adding the amount to the balance..
+   * Accepts the amount of the transaction.
+   * Calls createTransaction to create a transaction object
+   * then adds it to the transaction history
    */
   deposit(amount) {},
 
   /*
-   * Метод отвечающий за снятие суммы с баланса.
+   *The method responsible for withdrawing the amount from the balance.
    * Принимает сумму танзакции.
-   * Вызывает createTransaction для создания объекта транзакции
-   * после чего добавляет его в историю транзакций.
+   * Calls createTransaction to create a transaction object
+   * then adds it to the transaction history.
    *
-   * Если amount больше чем текущий баланс, выводи сообщение
-   * о том, что снятие такой суммы не возможно, недостаточно средств.
+   * If amount is greater than the current balance, display a message
+   * about the fact that the withdrawal of such an amount is not possible, there are not enough funds.
    */
   withdraw(amount) {},
 
   /*
-   * Метод возвращает текущий баланс
+   * The method returns the current balance
    */
   getBalance() {},
 
   /*
-   * Метод ищет и возвращает объект транзации по id
+   * The method searches and returns the transaction object by id
    */
   getTransactionDetails(id) {},
 
   /*
-   * Метод возвращает количество средств
-   * определенного типа транзакции из всей истории транзакций
+   * The method returns the amount of funds
+   *a specific type of transaction from the entire history of transactions
    */
   getTransactionTotal(type) {},
 };
