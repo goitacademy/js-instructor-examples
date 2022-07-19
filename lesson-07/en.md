@@ -31,20 +31,19 @@ createProduct({ name: '🍎', price: 30, quantity: 3 }, logProduct);
 createProduct({ name: '🍋', price: 20, quantity: 5 }, logTotalPrice);
 ```
 
-## Example 2 - Коллбек функции
+## Example 2 - Function callback
 
-Добавьте объекту `account` методы `withdraw(amount, onSuccess, onError)` и
-`deposit(amount, onSuccess, onError)`, где первый параметр это сумма операции, а
-второй и третий - колбеки.
+Add methods `withdraw(amount, onSuccess, onError)` to the `account` object and
+`deposit(amount, onSuccess, onError)`, where the first parameter is the amount of the operation, and
+second and third are callbacks.
 
-Метод `withdraw` вызывает onError если amount больше TRANSACTION_LIMIT или
-this.balance, и onSuccess в противном случае.
-
-Метод `deposit` вызывает onError если amount больше TRANSACTION_LIMIT или меньше
-либо равен нулю, и onSuccess в противном случае.
+The `withdraw` method raises onError if amount is greater than TRANSACTION_LIMIT or
+this.balance, and onSuccess otherwise.
+`deposit` method raises onError if amount is greater than TRANSACTION_LIMIT or less
+or either zero and onSuccess otherwise.
 
 ```js
-// Решение
+// Solution
 const TRANSACTION_LIMIT = 1000;
 
 const account = {
