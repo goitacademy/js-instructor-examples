@@ -131,12 +131,12 @@ console.log(
 
 ## Example 5 - operation Spread 
 
-Дополни функцию `createContact(partialContact)` так, чтобы она возвращала новый
-объект контакта с добавленными свойствами `id` и `createdAt`, а также `list` со
-значением "default" если в `partialContact` нет такого свойства.
+Extend the `createContact(partialContact)` function so that it returns a new
+contact object with `id` and `createdAt` properties added, as well as `list` with
+value "default" if there is no such property in `partialContact`.
 
 ```js
-// Решение
+// Solution
 function createContact(partialContact) {
   return {
     list: 'default',
@@ -165,13 +165,13 @@ function generateId() {
 }
 ```
 
-## Example 6 - Операция rest
+## Example 6 - Operation rest
 
-Напиши функцию `transformUsername(user)` так, чтобы она возвращала новый обьект
-со свойством `fullName`, вместо `firstName` и `lastName`.
+Write a `transformUsername(user)` function to return a new object
+with `fullName` property instead of `firstName` and `lastName`.
 
 ```js
-// Решение
+// Solution
 function transformUsername({ firstName, lastName, ...otherProps }) {
   return {
     fullName: `${firstName} ${lastName}`,
