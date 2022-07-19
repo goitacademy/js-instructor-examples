@@ -35,18 +35,18 @@ console.log(result);
 
 ## Example 4 - Math class
 
-Напиши скрипт, который выводит в консоль округленные вверх/вниз и т.д. значения
-переменной `value`. Используй методы `Math.floor()`, `Math.ceil()` и
-`Math.round()`. Проверь что будет в консоли при значениях `27.3` и `27.9`.
+Write a script that prints to the console rounded up/down, etc. values
+variable `value`. Use the methods `Math.floor()`, `Math.ceil()` and
+`Math.round()`. Проверьте, что произойдет в консоли для значений «27,3» и «27,9»..
 
 ```js
 const value = 27.5;
 ```
 
-## Example 5 - Шаблонные строки
+## Example 5 - Template lines
 
-Составь фразу с помощью шаблонных строк `A has B bots in stock`, где A, B -
-переменные вставленные в строку.
+Compose a phrase using the template strings `A has B bots in stock`, where A, B -
+variables inserted into a line.
 
 ```js
 const companyName = 'Cyberdyne Systems';
@@ -56,17 +56,17 @@ const message = ``;
 console.log(message); // "Cyberdyne Systems has 200 bots in stock"
 ```
 
-## Example 6 - Методы строк и чейнинг
+## Example 6 - String methods and chaining
 
-Напиши скрипт который рассчитывает индекс массы тела человека. Для этого
-необходимо разделить вес в киллограммах на квадрат высоты человека в метрах.
+Write a script that calculates a person's body mass index. For this
+you need to divide the weight in kilograms by the square of the person's height in meters.
 
-Вес и высота хранятся в переменных `weight` и `height`, но не как числа, а в
-виде строк (специально для задачи). Нецелые числа могут быть заданы в виде
-`24.7` или `24,7`, то есть в качестве разделителя дробной части может быть
-запятая.
+Weight and height are stored in the `weight` and `height` variables, but not as numbers, but in
+as strings (specially for the task). Non-integer numbers can be given as
+`24.7` or `24,7`,that is, as a separator of the fractional part can be
+comma.
 
-Индекс массиы тела необходимо округлить до одной цифры после запятой;
+The body mass index should be rounded to one decimal place;
 
 ```js
 let weight = '88,3';
@@ -76,9 +76,9 @@ const bmi = ;
 console.log(bmi); // 28.8
 ```
 
-## Example 7 - Операторы сравнения и приведение типов
+## Example 7 - Comparison operators and type casting
 
-Каким будет результат выражений?
+What will be the result of the expressions?
 
 ```js
 console.log(5 > 4);
@@ -112,9 +112,9 @@ console.log(undefined == null);
 console.log(undefined === null);
 ```
 
-## Example 8 - Логические операторы
+## Example 8 - Logical operators
 
-Каким будет результат выражений?
+What will be the result of the expressions?
 
 ```js
 console.log(true && 3);
@@ -138,13 +138,13 @@ console.log((1 && null && 2) > 0);
 console.log(null || (2 && 3) || 4);
 ```
 
-## Example 9 - Значение по умолчанию и оператор нулевого слияния
+## Example 9 - Default value and null merge operator 
 
-Отрефактори код так, чтобы в переменную `value` присваивалось значение
-переменной `incomingValue`, если оно не равно `undefined` или `null`. В
-противном случае должно присваиваться значение `defaultValue`. Проверь работу
-скрипта для слепдующих значений переменной `incomingValue`: null, undefined, 0,
-false. Используй оператор `??` (nullish coalescing operator).
+ Refactor the code so that the value is assigned to the `value` variable
+variable `incomingValue` if it is not equal to `undefined` or `null`. Otherwise,
+`defaultValue` must be assigned. Check work
+script for the following values of the `incomingValue` variable: null, undefined, 0,
+false. Use operator `??` (nullish coalescing operator).
 
 ```js
 const incomingValue = 5;
@@ -153,14 +153,14 @@ const value = incomingValue || defaultValue;
 console.log(value);
 ```
 
-## Example 10 - Опертор % и методы строк
+## Example 10 - The % Operator and String Methods
 
-Напиши скрипт который переведёт значение `totalMinutes` (количество минут) в
-строку в формате часов и минут `HH:MM`.
+Write a script that will convert the value of `totalMinutes` (number of minutes) to
+string in hour and minute format `HH:MM`.
 
-- 70 покажет 01:10
-- 450 покажет 07:30
-- 1441 покажет 24:01
+- 70 will show 01:10
+- 450 will show 07:30
+- 1441 will show 24:01
 
 ```js
 const totalMinutes = 70;
