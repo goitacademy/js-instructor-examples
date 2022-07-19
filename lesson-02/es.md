@@ -1,17 +1,17 @@
-# Модуль 1. Занятие 2. Ветвления. Циклы
+# Módulo 1. Clase 2. Oraciones condicionales. Bucles
 
-## Example 1 - Ввод пользователя и ветвления
+## Ejemplo 1 - Entrada del usuario y oración condicional
 
-Используя конструкцию if..else и prompt, напиши код, который будет спрашивать:
-`"Какое официальное название JavaScript?"`. Если пользователь вводит
-`ECMAScript`, то показывай alert со строкой `"Верно!"`, в противном случае -
-`"Не знаете? ECMAScript!"`
+Utilizando la construcción if..else y prompt, escribe un código que pregunte:
+`¿Cuál es el nombre oficial de JavaScript?` Si el usuario introduce `ECMAScript`, 
+entonces muestra una alerta con la cadena `"¡Correcto!"`, en caso contrario,
+`"¿No lo sabes? ECMAScript"`.
 
-## Example 2 - Отображение времени (if...else)
+## Ejemplo 2 - Visualización de la hora (if...else)
 
-Напиши скрипт для отображения часов и минут в консоли браузера в виде строки
-формата `"14 ч. 26 мин."`. Если значение переменной `minutes` равно `0`, то
-выводи строку `"14 ч."`, без минут.
+Escribe un script para mostrar las horas y los minutos en la consola del navegador 
+como una cadena con el formato `"14 h. 26 min"`. Si el valor de la variable `minutes` es `0`, entonces
+muestra la cadena `"14 h"`, sin minutos.
 
 ```js
 const hours = 14;
@@ -19,67 +19,65 @@ const minutes = 26;
 let timestring;
 
 if (minutes > 0) {
-  timestring = `${hours} ч. ${minutes} мин.`;
+  timestring = `${hours} h. ${minutes} min.`;
 } else {
-  timestring = `${hours} ч.`;
+  timestring = `${hours} h.`;
 }
 console.log(timestring);
 ```
 
-## Example 3 - Ветвеления
+## Ejemplo 3 - Oración condicional
 
-Напиши скрипт, который выводит в консоль строку `"Это положительное число"`,
-если в prompt пользователь ввел число больше нуля. Если был введен ноль, выводи
-в консоль строку `"Это ноль"`. Если передали отрицательное число, в консоли
-должна быть строка `"Это отрицательное число"`.
+Escriba un script que muestre en la consola la cadena `"Este es un número positivo"`, si el 
+usuario ha introducido un número mayor que cero en el prompt. Si se ha introducido un cero, 
+la respuesta en la consola es la cadena `"Esto es cero"`.Si se introduce un número negativo, 
+en la consola debe aparecer la cadena `"Este es un número negativo"`.
 
 ```js
-const userInput = prompt('Введите число');
+const userInput = prompt('Introduzca un número');
 ```
 
-## Example 4 - Вложенные ветвления
+## Ejemplo 4 - Oraciones condicionales encadenadas
 
-Напиши скрипт, который сравнивает числа в переменных `a` и `b`. Если оба
-значения больше `100`, то выведи в консоль максимальное из них. В противном
-случае в консоли должна быть сумма значения `b` и числа 512.
+Escribe un script que compare los números de las variables `a` y `b`. Si ambos son mayores 
+que `100`, imprime el mayor de ellos en la consola. En caso contrario, la consola debería
+mostrar la suma del valor de `b` y el número 512.
 
 ```js
 const a = 120;
 const b = 180;
 ```
 
-## Example 5 - Форматирование ссылки (endsWith)
+## Ejemplo 5 - Formato del link (endsWith)
 
-Напиши скрипт который проверяет заканчивается ли значение переменной `link`
-символом `/`. Если нет, добавь в конец значения `link` этот символ. Используй
-конструкцию `if...else`.
+Escriba un script que compruebe si el valor de la variable `link` termina con con `/`. Si no es
+así, añada dicho símbolo al final del valor de `link`. Utilice la construcción `if...else`.
 
 ```js
 let link = 'https://my-site.com/about';
-// Пиши код ниже этой строки
+// Escriba el código debajo de esta línea
 
-// Пиши код выше этой строки
+// Escriba el código arriba de esta línea
 console.log(link);
 ```
 
-## Example 6 - Форматирование ссылки (includes и логическое «И»)
+## Ejemplo 6 - Formato del link (includes y lógica «Y»)
 
-Напиши скрипт который проверяет заканчивается ли значение переменной `link`
-символом `/`. Если нет, добавь в конец значения `link` этот символ, но только в
-том случае, если в `link` есть подстрока `"my-site"`. Используй конструкцию
-`if...else`.
+Escriba un script que compruebe si el valor de la variable `link` termina con con `/`.
+Si no es así, añada dicho símbolo al final del valor de `link`, pero sólo si en `link` hay
+una subcadena `"my-site"`. Utilice la construcción `if...else`.
 
 ```js
 let link = 'https://somesite.com/about';
-// Пиши код ниже этой строки
+// Escriba el código debajo de esta línea
 
-// Пиши код выше этой строки
+// Escriba el código arriba de esta línea
 console.log(link);
 ```
 
-## Example 7 - Форматирование ссылки (тернарный оператор)
+## Ejemplo 7 - Formato del link (operador ternario)
 
-Выполни рефакторинг кода задачи номер 4 используя тернарный оператор.
+Refactoriza la tarea número 4 utilizando el operador ternario.
 
 ```js
 let link = 'https://somesite.com/about';
@@ -89,74 +87,73 @@ if (link.includes('my-site') && !link.endsWith('/')) {
 console.log(link);
 ```
 
-## Example 8 - if...else и логические операторы
+## Ejemplo 8 - if...else y operadores lógicos
 
-Напиши скрипт который будет выводить в консоль браузера строку в зависимости от
-значения переменной `hours`.
+Escriba un script que envíe una cadena a la consola del navegador según el
+valor de la variable `hours`.
 
-Если значение переменной `hours`:
+Si el valor de la variable `hours` es:
 
-- меньше `17`, выводи строку `"Pending"`
-- больше либо равно `17` и меньше либо равно 24, выводи строку `"Expires"`
-- больше `24` , выводи строку `"Overdue"`
+- menor que `17`, muestra la cadena `"Pending"`
+- mayor o igual que `17` y menor o igual que 24, muestra la cadena `"Expires"`
+- mayor que `24` , muestra la cadena `"Overdue"`
 
 ```js
 const hours = 10;
 ```
 
-## Example 9 - Дедлайн сдачи проекта (if...else)
+## Ejemplo 9 - Plazo de entrega del proyecto (if...else)
 
-Напиши скрипт для отображения времени дедлайна сдачи проекта. Используй
-конструкцию `if...else`.
+Escriba un script para mostrar la hora de entrega del proyecto. 
+Utilice la construcción `if...else`.
 
-- Eсли до дедлайна 0 дней - выведи строку `"Сегодня"`
-- Eсли до дедлайна 1 день - выведи строку `"Завтра"`
-- Eсли до дедлайна 2 дня - выведи строку `"Послезавтра"`
-- Eсли до дедлайна 3+ дней - выведи строку `"Дата в будущем"`
+- Si faltan 0 días - muestra la cadena `"Hoy"`
+- Si falta 1 día - muestra la cadena `"Mañana"`
+- Si faltan 2 días - muestra la cadena `"Pasado mañana"`
+- Si faltan 3+ días - muestra la cadena `"Fecha en el futuro"`
 
 ```js
 const daysUntilDeadline = 5;
-// Пиши код ниже этой строки
+// Escriba el código debajo de esta línea
 ```
 
-## Example 10 - Дедлайн сдачи проекта (switch)
+## Ejemplo 10 - Plazo de entrega del proyecto (switch)
 
-Выполни рефакторинг кода задачи номер 5 используя `switch`.
+Refactoriza el código de la tarea número 5 utilizando `switch`.
 
 ```js
 const daysUntilDeadline = 5;
 
 if (daysUntilDeadline === 0) {
-  console.log('Сегодня');
+  console.log('Hoy');
 } else if (daysUntilDeadline === 1) {
-  console.log('Завтра');
+  console.log('Mañana');
 } else if (daysUntilDeadline === 2) {
-  console.log('Послезавтра');
+  console.log('Pasado mañana');
 } else {
-  console.log('Дата в будущем');
+  console.log('Fecha en el futuro');
 }
 ```
 
-## Example 11 - Цикл for
+## Ejemplo 11 - Bucle for
 
-Напиши цикл for который выводит в консоль браузера числа по возрастанию от `min`
-до `max`, но только если число кратное `5`.
+Escriba un bucle for que muestre los números en orden ascendente de `min` a `max` en
+la consola del navegador, pero sólo si el número es un múltiplo de `5`.
 
 ```js
 const max = 100;
 const min = 20;
 ```
 
-## Example 12 - Ввод пользователя и ветвления
+## Ejemplo 12 - Entrada del usuario y oración condicional
 
-Напиши скрипт, который будет спрашивать логин с помощью `prompt` и логировать
-результат в консоль браузера.
+Escribe un script que pida un login usando `prompt` y haga un log del resultado en la consola del navegador.
 
-- Если посетитель вводит `"Админ"`, то `prompt` запрашивает пароль
-- Если ничего не введено или нажата клавиша Esc - вывести строку `"Отменено"`
-- В противном случае вывести строку `"Я вас не знаю"`
+- Si el visitante introduce `Admin`, `prompt` le pide una contraseña
+- Si no se introduce nada y pulsa la tecla Esc - muestra la cadena `"Cancelado"`
+- En caso contrario, muestra la cadena `"No te conozco"`
 
-Пароль проверять так:
+Comprobar la contraseña de la siguiente manera:
 
-- Если введён пароль `"Я админ"`, то вывести строку `"Здравствуйте!"`
-- Иначе выводить строку `"Неверный пароль"`
+- Si se introduce la contraseña `"Soy el admin"`, mostrar la cadena `"¡Hola!"`
+- En caso contrario, mostrar la cadena `"Contraseña incorrecta"`
