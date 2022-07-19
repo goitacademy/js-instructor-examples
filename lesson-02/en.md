@@ -39,26 +39,26 @@ const userInput = prompt('Enter the number');
 
 ## Example 4 - Nested branches
 
-Напиши скрипт, который сравнивает числа в переменных `a` и `b`. Если оба
-значения больше `100`, то выведи в консоль максимальное из них. В противном
-случае в консоли должна быть сумма значения `b` и числа 512.
+Write a script that compares the numbers in variables `a` and `b`. If both
+values greater than `100`, then print the maximum of them to the console. Otherwise,
+the console should show the sum of the value `b` and the number 512.
 
 ```js
 const a = 120;
 const b = 180;
 ```
 
-## Example 5 - Форматирование ссылки (endsWith)
+## Example 5 - Link Formatting (endsWith)
 
-Напиши скрипт который проверяет заканчивается ли значение переменной `link`
-символом `/`. Если нет, добавь в конец значения `link` этот символ. Используй
-конструкцию `if...else`.
+Write a script that checks if the value of the `link` variable ends
+symbol `/`. if not, add this character to the end of the `link` value. Use
+`if...else` construction.
 
 ```js
 let link = 'https://my-site.com/about';
-// Пиши код ниже этой строки
+// Write code below this line
 
-// Пиши код выше этой строки
+// Write code above this line
 console.log(link);
 ```
 
