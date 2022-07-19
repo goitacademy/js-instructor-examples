@@ -1,21 +1,21 @@
-# Модуль 5. Занятие 10. Прототипы и классы
+# Módulo 5. Clase 10. Prototipos y Clases
 
-## Example 1 - Блоггер
+## Ejemplo 1 - Blogger
 
-Напиши класс `Blogger` для создания обьекта блоггера со следующим свойствами:
+Escribe una clase `Blogger` para crear un objeto blogger con las siguientes propiedades:
 
-- `email` - почта, строка
-- `age` - возраст, число
-- `numberOfPosts` - кол-во постов, число
-- `topics` - массив тем на которых специализируется блоггер
+- `email` - correo, cadena
+- `age` - edad, número
+- `numberOfPosts` - cantidad de posts, número
+- `topics` - un Array de temas en los que el blogger se especializa
 
-Класс ожидает один параметр - объект настроек с одноимёнными свойствами.
+La clase espera un único parámetro: un objeto de configuraciones con propiedades del mismo nombre.
 
-Добавь метод `getInfo()`, который, возвращает строку:
-`User ${почта} is ${возраст} years old and has ${кол-во постов} posts`.
+Agrega el método `getInfo()`, que devuelde la cadena:
+`User ${correo} is ${edad} years old and has ${cant. de posts} posts`.
 
-Добавь метод `updatePostCount(value)`, который в параметре `value` принимает
-количество постов которые нужно добавить пользователю.
+Agrega el método `updatePostCount(value)`, que en el parámetro `value` recibe la
+cantidad de posts que debe añadir el usuario.
 
 ```js
 const mango = new User({
@@ -39,17 +39,17 @@ poly.updatePostCount(4);
 console.log(poly.getInfo()); // User poly@mail.com is 19 years old and has 21 posts
 ```
 
-## Example 2 - Хранилище
+## Ejemplo 2 - Almacén
 
-Напиши класс `Storage` который создаёт объекты для управления складом товаров.
-При вызове будет получать один аргумент - начальный массив товаров, и записывать
-его в свойство `items`.
+Escriba una clase `Storage` que crea objetos para gestionar un almacén de productos.
+Cuando se llama recibe un argumento, el array inicial de productos, y lo escribe
+en la propiedad `items`.
 
-Добавь методы класса:
+Añade métodos de la clase:
 
-- `getItems()` - возвращает массив товаров.
-- `addItem(item)` - получает новый товар и добавляет его к текущим.
-- `removeItem(item)` - получает товар и, если он есть, удаляет его из текущих.
+- `getItems()` - devuelve un array de productos.
+- `addItem(item)` - recibe un nuevo producto y lo añade a los actuales.
+- `removeItem(item)` - recibe el elemento y, si existe, lo elimina de los actuales.
 
 ```js
 const storage = new Storage(['🍎', '🍋', '🍇', '🍑']);
@@ -64,11 +64,11 @@ storage.removeItem('🍋');
 console.table(storage.items); // [ '🍎', '🍇', '🍑', '🍌' ]
 ```
 
-## Example 3 - User
+## Ejemplo 3 - User
 
-Напиши класс `User` который создаёт объект со свойствами `login` и `email`.
-Объяви приватные свойства `#login` и `#email`, доступ к которым сделай через
-геттер и сеттер `login` и `email`.
+Escribe una clase `User` que cree un objeto con las propiedades `login` y `email`. 
+Declare las propiedades privadas `#login` y `#email`, a las que se puede acceder
+mediante el getter y setter `login` y `email`.
 
 ```js
 const mango = new User({
@@ -90,11 +90,11 @@ poly.login = 'Polycutie';
 console.log(poly.login); // Polycutie
 ```
 
-## Example 4 - Заметки
+## Ejemplo 4 - Notas
 
-Напиши класс `Notes` который управляет коллекцией заметок в свойстве `items`.
-Заметка это объект со свойствами `text` и `priority`. Добавь классу статическое
-свойство `Priority`, в котором будет храниться объект с приоритетами.
+Escribe una clase `Notes` que gestione una colección de notas en la propiedad `items`.
+Una nota es un objeto con las propiedades `text` y `priority`. Añade una propiedad 
+estática `Prioridad` a la clase, en donde almacenará el objeto con las prioridades.
 
 ```js
 {
@@ -104,33 +104,33 @@ console.log(poly.login); // Polycutie
 }
 ```
 
-Добавь методы `addNote(note)`, `removeNote(text)` и
+Agregue los métodos `addNote(note)`, `removeNote(text)` y
 `updatePriority(text, newPriority)`.
 
 ```js
 const myNotes = new Notes([]);
 
-myNotes.addNote({ text: 'Моя первая заметка', priority: Notes.Priority.LOW });
+myNotes.addNote({ text: 'Mi primera nota', priority: Notes.Priority.LOW });
 console.log(myNotes.items);
 
 myNotes.addNote({
-  text: 'Моя вторая заметка',
+  text: 'Mi segunda nota',
   priority: Notes.Priority.NORMAL,
 });
 console.log(myNotes.items);
 
-myNotes.removeNote('Моя первая заметка');
+myNotes.removeNote('Mi primera nota');
 console.log(myNotes.items);
 
-myNotes.updateNote('Моя вторая заметка', Notes.Priority.HIGH);
+myNotes.updateNote('Mi segunda nota', Notes.Priority.HIGH);
 console.log(myNotes.items);
 ```
 
-## Example 5 - Toggle
+## Ejemplo 5 - Toggle
 
-Напишите класс `Toggle` который принимает объект настроек `{isOpen: boolean}` и
-объявляет одно свойство `on` - состояние вкл/выкл (true/false). По умолчанию
-значение свойства `on` должно быть `false`.
+Escribe una clase `Toggle` que toma un objeto de configuración `{isOpen: boolean}` y 
+declara una propiedad `on` - estado on/off (verdadero/falso). Por defecto el valor
+de la propiedad `on` debe ser `false`.
 
 ```js
 const firstToggle = new Toggle({ isOpen: true });
