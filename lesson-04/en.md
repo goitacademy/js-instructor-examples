@@ -84,10 +84,10 @@ console.log(findLargestNumber([2, 17, 94, 1, 23, 37])); // 94
 console.log(findLargestNumber([49, 4, 7, 83, 12])); // 83
 ```
 
-## Example 7 - Среднее значение
+## Example 7 - Average value
 
-Напишите функцию `calAverage()` которая принимает произвольное кол-во аргументов
-и возвращает их среднее значение. Все аругменты будут только числами.
+Write a `calAverage()` function that takes an arbitrary number of arguments
+and returns their average. All arguments will be only numbers.
 
 ```js
 function calAverage() {}
