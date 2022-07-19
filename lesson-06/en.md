@@ -92,12 +92,13 @@ console.log(
 
 ## Example 4 - Destructuring
 
-Перепиши функцию так, чтобы она принимала объект параметров со свойствами
-`companyName` и `stock` и выводила репорт о количестве товаров на складе любой
-компании.
+Rewrite the function so that it accepts a parameters object with properties
+`companyName` and `stock` and display a report abou the number of goods in the warehouse
+of any companies.
+
 
 ```js
-// Решение
+// Solution
 function getStockReport({ companyName, stock }) {
   let total = 0;
   for (const value of Object.values(stock)) {
@@ -128,7 +129,7 @@ console.log(
 ); // "Belacci has 35 item in stock"
 ```
 
-## Example 5 - Операция spread
+## Example 5 - operation Spread 
 
 Дополни функцию `createContact(partialContact)` так, чтобы она возвращала новый
 объект контакта с добавленными свойствами `id` и `createdAt`, а также `list` со
