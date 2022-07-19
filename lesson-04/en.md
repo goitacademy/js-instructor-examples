@@ -97,10 +97,10 @@ console.log(calAverage(14, 8, 2)); // 8
 console.log(calAverage(27, 43, 2, 8, 36)); // 23.2
 ```
 
-## Example 8 - Форматирование времени
+## Example 8 - Time Formatting
 
-Напиши функцию `formatTime(minutes)` которая переведёт значение `minutes`
-(количество минут) в строку в формате часов и минут `HH:MM`.
+Write a function `formatTime(minutes)` that will translate the value of `minutes`
+(number of minutes) to a string in hour and minute format `HH:MM`.
 
 ```js
 const hours = Math.floor(totalMinutes / 60);
@@ -119,24 +119,24 @@ console.log(formatTime(450)); // "07:30"
 console.log(formatTime(1441)); // "24:01"
 ```
 
-## Example 9 - Коллекция курсов (includes, indexOf, push и т. д.)
+## Example 9 -Collection of courses (includes, indexOf, push, etc.)
 
-Напишите функции для работы с коллекцией обучающих курсов `courses`:
+Write functions to work with the `courses` collection of training courses:
 
-- `addCourse(name)` - добавляет курс в конец коллекции
-- `removeCourse(name)` - удаляет курс из коллекции
-- `updateCourse(oldName, newName)` - изменяет имя на новое
+- `addCourse(name)` - adds a course to the end of the collection
+- `removeCourse(name)` - removes a course from the collection
+- `updateCourse(oldName, newName)` - changes the name to a new one
 
 ```js
 const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL'];
 
 addCourse('Express');
 console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
-addCourse('CSS'); // 'У вас уже есть такой курс'
+addCourse('CSS'); // ' You already have this course'
 
 removeCourse('React');
 console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
-removeCourse('Vue'); // 'Курс с таким имененем не найден'
+removeCourse('Vue'); // 'Course with this name was not found'
 
 updateCourse('Express', 'NestJS');
 console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
