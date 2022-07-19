@@ -1,9 +1,9 @@
-# Модуль 3 Занятие 6. Деструктуризация и rest/spread
+# Módulo 3. Clase 6. Desestructuración y rest/spread
 
-## Example 1 - Деструктуризация
+## Ejemplo 1 - Desestructuración
 
-Перепиши функцию так, чтобы она принимала один объект параметров, вместо набора
-независимых аргументов.
+Reescribe la función para que acepte un único objeto de parámetros en lugar
+de un conjunto de argumentos independientes.
 
 ```js
 function calcBMI(weight, height) {
@@ -12,12 +12,12 @@ function calcBMI(weight, height) {
   return Number((numericWeight / numericHeight ** 2).toFixed(1));
 }
 
-// Было
+// Era
 // console.log(calcBMI('88,3', '1.75'));
 // console.log(calcBMI('68,3', '1.65'));
 // console.log(calcBMI('118,3', '1.95'));
 
-// Ожидается
+// Se espera
 console.log(
   calcBMI({
     weight: '88,3',
@@ -38,10 +38,10 @@ console.log(
 );
 ```
 
-## Example 2 - Деструктуризация
+## Ejemplo 2 - Desestructuración
 
-Перепиши функцию так, чтобы она принимала один объект параметров, вместо набора
-независимых аргументов.
+Reescribe la función para que acepte un único objeto de parámetros en lugar
+de un conjunto de argumentos independientes.
 
 ```js
 function printContactsInfo(names, phones) {
@@ -52,33 +52,33 @@ function printContactsInfo(names, phones) {
   }
 }
 
-// Было
+// Era
 // printContactsInfo(
 //   'Jacob,William,Solomon,Artemis',
 //   '89001234567,89001112233,890055566377,890055566300',
 // );
 
-// Ожидается
+// Se espera
 printContactsInfo({
   names: 'Jacob,William,Solomon,Artemis',
   phones: '89001234567,89001112233,890055566377,890055566300',
 });
 ```
 
-## Example 3 - Глубокая деструктуризация
+## Ejemplo 3 - Desestructuración profunda
 
-Перепиши функцию так, чтобы она принимала один объект параметров, вместо набора
-независимых аргументов.
+Reescribe la función para que acepte un único objeto de parámetros en lugar
+de un conjunto de argumentos independientes.
 
 ```js
 function getBotReport(companyName, repairBots, defenceBots) {
   return `${companyName} has ${repairBots + defenceBots} bots in stock`;
 }
 
-// Было
+// Era
 // console.log(getBotReport('Cyberdyne Systems', 150, 50));
 
-// Ожидается
+// Se espera
 console.log(
   getBotReport({
     companyName: 'Cyberdyne Systems',
@@ -90,14 +90,14 @@ console.log(
 ); // "Cyberdyne Systems has 200 bots in stock"
 ```
 
-## Example 4 - Деструктуризация
+## Example 4 - Desestructuración
 
-Перепиши функцию так, чтобы она принимала объект параметров со свойствами
-`companyName` и `stock` и выводила репорт о количестве товаров на складе любой
-компании.
+Reescriba la función para que acepte un objeto parámetro con las 
+propiedades `companyName` y `stock` y produzca un informe sobre 
+la cantidad de productos en stock para cualquier empresa.
 
 ```js
-// Решение
+// Solución
 function getStockReport({ companyName, stock }) {
   let total = 0;
   for (const value of Object.values(stock)) {
@@ -128,14 +128,14 @@ console.log(
 ); // "Belacci has 35 item in stock"
 ```
 
-## Example 5 - Операция spread
+## Ejemplo 5 - Operación spread
 
-Дополни функцию `createContact(partialContact)` так, чтобы она возвращала новый
-объект контакта с добавленными свойствами `id` и `createdAt`, а также `list` со
-значением "default" если в `partialContact` нет такого свойства.
+Completa la función `createContact(partialContact)` para que devuelva un nuevo
+objeto de contacto con las propiedades añadidas `id` y `createdAt` así como `list` con
+el valor "default" si `partialContact` no tiene dicha propiedad.
 
 ```js
-// Решение
+// Solución
 function createContact(partialContact) {
   return {
     list: 'default',
@@ -164,13 +164,13 @@ function generateId() {
 }
 ```
 
-## Example 6 - Операция rest
+## Ejemplo 6 - Operación rest
 
-Напиши функцию `transformUsername(user)` так, чтобы она возвращала новый обьект
-со свойством `fullName`, вместо `firstName` и `lastName`.
+Escribe la función `transformUsername(user)` para que devuelva un nuevo objeto
+con la propiedad `fullName`, en lugar de `firstName` y `lastName`.
 
 ```js
-// Решение
+// Solución
 function transformUsername({ firstName, lastName, ...otherProps }) {
   return {
     fullName: `${firstName} ${lastName}`,
