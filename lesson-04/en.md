@@ -16,9 +16,9 @@ const bmi = calcBMI('88,3', '1.75');
 console.log(bmi); // 28.8
 ```
 
-## Example 2 - Меньшее из чисел
+## Example 2 - Smaller of numbers
 
-Напиши функцию `min(a,b)`, которая возвращает меньшее из чисел `a` и `b`.
+Write a function `min(a,b)` that returns the smaller of the numbers `a` and `b`.
 
 ```js
 console.log(min(2, 5)); // 2
@@ -26,11 +26,11 @@ console.log(min(3, -1)); // -1
 console.log(min(1, 1)); // 1
 ```
 
-## Example 3 - Площадь прямоугольника
+## Example 3 - Area of a rectangle
 
-Напиши функцию `getRectArea(dimensions)` для вычисления площади прямоугольника
-со сторонами, значения которых будут переданы в параметр `dimensions` в виде
-строки. Значения гарантированно разделены пробелом.
+Write a function `getRectArea(dimensions)` to calculate the area of a rectangle
+with sides, the values of which will be passed to the `dimensions` parameter as a string.
+Values are guaranteed to be separated by a space.
 
 ```js
 function getRectArea(dimensions) {}
