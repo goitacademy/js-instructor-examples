@@ -1,19 +1,19 @@
-# Модуль 4. Занятие 7. Коллбеки. Стрелочные функции. forEach
+# Módulo 4. Clase 7. CallBacks. Funciones de Flecha. forEach
 
-## Example 1 - Коллбек функции
+## Ejemplo 1 - Funciones CallBack
 
-Напишите следующие функции:
+Escriba las siguientes funciones:
 
-- `createProduct(obj, callback)` - принимает объект товара без id, а также
-  колбек. Функция создаёт обьект товара, добавляя ему уникальный идентификатор в
-  свойство `id` и вызывает колбек передавая ему созданный обьект.
-- `logProduct(product)` - коллбек принимающий обьект продукта и логирующий его в
-  консоль
-- `logTotalPrice(product)` - коллбек принимающий обьект продукта и логирующий
-  общую стоимость товара в консоль
+- `createProduct(obj, callback)` - acepta un objeto de producto sin id, así como una CallBack.
+  La función crea un objeto de producto añadiendo un identificador único a su propiedad `id` y
+  llama al la CallBack, pasándole el objeto creado.
+- `logProduct(product)` - callback que recibe un objeto de producto y lo registra
+  en el consola
+- `logTotalPrice(product)` - callback que recibe un objeto de producto y registra
+  el coste total del producto en la consola
 
 ```js
-// Решение
+// solución
 function createProduct(partialProduct, callback) {
   const product = { id: Date.now(), ...partialProduct };
   callback(product);
@@ -31,20 +31,20 @@ createProduct({ name: '🍎', price: 30, quantity: 3 }, logProduct);
 createProduct({ name: '🍋', price: 20, quantity: 5 }, logTotalPrice);
 ```
 
-## Example 2 - Коллбек функции
+## Ejemplo 2 - Funciones CallBack
 
-Добавьте объекту `account` методы `withdraw(amount, onSuccess, onError)` и
-`deposit(amount, onSuccess, onError)`, где первый параметр это сумма операции, а
-второй и третий - колбеки.
+Agregue un objeto `account` métodos `withdraw(amount, onSuccess, onError)` y
+`deposit(amount, onSuccess, onError)`, donde el primer parámetro es la suma de la 
+ operación y el segundo y el tercero son las CallBacks.
 
-Метод `withdraw` вызывает onError если amount больше TRANSACTION_LIMIT или
-this.balance, и onSuccess в противном случае.
+El método `withdraw` devuelve onError si el monto es mayor que TRANSACTION_LIMIT o
+this.balance, y en caso contrario onSuccess.
 
-Метод `deposit` вызывает onError если amount больше TRANSACTION_LIMIT или меньше
-либо равен нулю, и onSuccess в противном случае.
+EL método `deposit` devuelve onError si el monto el mayor que TRANSACTION_LIMIT o menor
+o igual a 0, y en caso contrario onSuccess.
 
 ```js
-// Решение
+// Solución
 const TRANSACTION_LIMIT = 1000;
 
 const account = {
@@ -88,15 +88,15 @@ account.deposit(-600, handleSuccess, handleError);
 account.deposit(600, handleSuccess, handleError);
 ```
 
-## Example 3 - Коллбек функции
+## Ejemplo 3 - Funciones CallBack
 
-Напишите функцию `each(array, callback)`, которая первым параметром ожидает
-массив, а вторым - функцию, которая применится к каждому элементу массива.
-Функция each должна вернуть новый массив, элементами которого будут результаты
-вызова коллбека.
+Escriba una función `each(array, callback)` la cual espera un array como primer
+parámetro, y como segundo una función a aplicar a cada elemento del array. La 
+función each debe devolver un nuevo array cuyos elementos son los resultados 
+de llamar la función CallBack.
 
 ```js
-// Решение
+// Solución
 function each(array, callback) {
   const newArr = [];
   for (const el of array) {
@@ -132,9 +132,9 @@ console.log(
 );
 ```
 
-## Example 4 - Стрелочные функции
+## Ejemplo 4 - Funciones de Flecha
 
-Выполните рефакторинг кода используя стрелочные функции.
+Efectúe la refactorización del código utilizando las funciones de flecha.
 
 ```js
 function createProduct(partialProduct, callback) {
@@ -154,9 +154,9 @@ createProduct({ name: '🍎', price: 30, quantity: 3 }, logProduct);
 createProduct({ name: '🍋', price: 20, quantity: 5 }, logTotalPrice);
 ```
 
-## Example 5 - Стрелочные функции
+## Ejemplo 5 - Funciones de Flecha
 
-Выполните рефакторинг кода используя стрелочные функции.
+Efectúe la refactorización del código utilizando las funciones de flecha.
 
 ```js
 const TRANSACTION_LIMIT = 1000;
@@ -202,9 +202,9 @@ account.deposit(-600, handleSuccess, handleError);
 account.deposit(600, handleSuccess, handleError);
 ```
 
-## Example 6 - Инлайн стрелочные функции
+## Ejemplo 6 - Funciones de Flecha en línea
 
-Выполните рефакторинг кода используя стрелочные функции.
+Efectúe la refactorización del código utilizando las funciones de flecha.
 
 ```js
 function each(array, callback) {
@@ -242,9 +242,9 @@ console.log(
 );
 ```
 
-## Example 7 - Метод forEach
+## Ejemplo 7 - Método forEach
 
-Выполните рефакторинг кода используя метод `forEach` и стрелочные функции.
+Efectúe la refactorización del código utilizando el método `forEach` y Funciones Flecha.
 
 ```js
 function logItems(items) {
@@ -258,9 +258,9 @@ logItems(['Mango', 'Poly', 'Ajax']);
 logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
 ```
 
-## Example 8 - Метод forEach
+## Ejemplo 8 - Método forEach
 
-Выполните рефакторинг кода используя метод `forEach` и стрелочные функции.
+Efectúe la refactorización del código utilizando el método `forEach` Funciones Flecha.
 
 ```js
 function printContactsInfo({ names, phones }) {
@@ -277,9 +277,9 @@ printContactsInfo({
 });
 ```
 
-## Example 9 - Метод forEach
+## Ejemplo 9 - Método forEach
 
-Выполните рефакторинг кода используя метод `forEach` и стрелочные функции.
+Efectúe la refactorización del código utilizando el método `forEach` Funciones Flecha.
 
 ```js
 function calсulateAverage(...args) {
