@@ -119,44 +119,44 @@ const daysUntilDeadline = 5;
 // Write code below this line
 ```
 
-## Example 10 - Дедлайн сдачи проекта (switch)
+## Example 10 - Project submission deadline (switch)
 
-Выполни рефакторинг кода задачи номер 5 используя `switch`.
+Make the code refactor of the task number 5 code using `switch`.
 
 ```js
 const daysUntilDeadline = 5;
 
 if (daysUntilDeadline === 0) {
-  console.log('Сегодня');
+  console.log('Today');
 } else if (daysUntilDeadline === 1) {
-  console.log('Завтра');
+  console.log('Tomorrow');
 } else if (daysUntilDeadline === 2) {
-  console.log('Послезавтра');
+  console.log('The day after tomorrow');
 } else {
-  console.log('Дата в будущем');
+  console.log('Date in the future');
 }
 ```
 
-## Example 11 - Цикл for
+## Example 11 - The for loop 
 
-Напиши цикл for который выводит в консоль браузера числа по возрастанию от `min`
-до `max`, но только если число кратное `5`.
+Write a for loop that prints numbers in ascending order to the browser console from `min` 
+to `max`, but only if the number is a multiple of `5`.
 
 ```js
 const max = 100;
 const min = 20;
 ```
 
-## Example 12 - Ввод пользователя и ветвления
+## Example 12 - User Input and Branching 
 
-Напиши скрипт, который будет спрашивать логин с помощью `prompt` и логировать
-результат в консоль браузера.
+Write a script that will ask for login using `prompt` and log
+result in browser console.
 
-- Если посетитель вводит `"Админ"`, то `prompt` запрашивает пароль
-- Если ничего не введено или нажата клавиша Esc - вывести строку `"Отменено"`
-- В противном случае вывести строку `"Я вас не знаю"`
+- If the visitor enters `"Admin"`, then `prompt` prompts for a password
+- If nothing is entered or the Esc key is pressed - print the line `"Canceled"`
+- Otherwise print the string `"I don't know you"`
 
-Пароль проверять так:
+Check password like this:
 
-- Если введён пароль `"Я админ"`, то вывести строку `"Здравствуйте!"`
-- Иначе выводить строку `"Неверный пароль"`
+- If the password is `"I'm an admin"`, then output the string `"Hello!"`
+- Else output the string `"Wrong password"`
