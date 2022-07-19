@@ -1,17 +1,17 @@
-# Модуль 1. Занятие 2. Ветвления. Циклы
+# Module 1. Lesson 2. Branching. Cycles
 
-## Example 1 - Ввод пользователя и ветвления
+## Example 1 - User Input and Branching
 
-Используя конструкцию if..else и prompt, напиши код, который будет спрашивать:
-`"Какое официальное название JavaScript?"`. Если пользователь вводит
-`ECMAScript`, то показывай alert со строкой `"Верно!"`, в противном случае -
-`"Не знаете? ECMAScript!"`
+Using the if..else and prompt constructs, write code that will ask:
+`"What is the official name of JavaScript?"`. If the user enters
+`ECMAScript`, then show an alert with the string `"Correct!"`, otherwise -
+`"Do not know? ECMAScript!"`
 
-## Example 2 - Отображение времени (if...else)
+## Example 2 - Time display (if...else)
 
-Напиши скрипт для отображения часов и минут в консоли браузера в виде строки
-формата `"14 ч. 26 мин."`. Если значение переменной `minutes` равно `0`, то
-выводи строку `"14 ч."`, без минут.
+Write a script to display hours and minutes in the browser console as a string
+format `"14 hours 26 minutes."`. If the value of the `minutes` variable is `0`, then
+output the string `"14 o'clock"`, without minutes.
 
 ```js
 const hours = 14;
@@ -19,25 +19,25 @@ const minutes = 26;
 let timestring;
 
 if (minutes > 0) {
-  timestring = `${hours} ч. ${minutes} мин.`;
+  timestring = `${hours} ч. ${minutes} min.`;
 } else {
-  timestring = `${hours} ч.`;
+  timestring = `${hours} h.`;
 }
 console.log(timestring);
 ```
 
-## Example 3 - Ветвеления
+## Example 3 - Branching
 
-Напиши скрипт, который выводит в консоль строку `"Это положительное число"`,
-если в prompt пользователь ввел число больше нуля. Если был введен ноль, выводи
-в консоль строку `"Это ноль"`. Если передали отрицательное число, в консоли
-должна быть строка `"Это отрицательное число"`.
+Write a script that prints the string `"This is a positive number"` to the console,
+if the user entered a number greater than zero in the prompt. If zero was entered, output
+to the console the string `"This is zero"`. If a negative number is passed, in the console
+should be the string `"This is a negative number"`.
 
 ```js
-const userInput = prompt('Введите число');
+const userInput = prompt('Enter the number');
 ```
 
-## Example 4 - Вложенные ветвления
+## Example 4 - Nested branches
 
 Напиши скрипт, который сравнивает числа в переменных `a` и `b`. Если оба
 значения больше `100`, то выведи в консоль максимальное из них. В противном
