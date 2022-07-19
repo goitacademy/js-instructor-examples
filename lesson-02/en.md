@@ -62,24 +62,24 @@ let link = 'https://my-site.com/about';
 console.log(link);
 ```
 
-## Example 6 - Форматирование ссылки (includes и логическое «И»)
+## Example 6 - Link formatting (includes and logical "AND")
 
-Напиши скрипт который проверяет заканчивается ли значение переменной `link`
-символом `/`. Если нет, добавь в конец значения `link` этот символ, но только в
-том случае, если в `link` есть подстрока `"my-site"`. Используй конструкцию
+Write a script that checks if the value of the `link` variable ends by
+symbol `/`. If not, append this character to the end of the `link` value, but only
+if `link` contains the substring `"my-site"`. Use construction
 `if...else`.
 
 ```js
 let link = 'https://somesite.com/about';
-// Пиши код ниже этой строки
+// Write code below this line
 
-// Пиши код выше этой строки
+// Write code above this line
 console.log(link);
 ```
 
-## Example 7 - Форматирование ссылки (тернарный оператор)
+## Example 7 - Link formatting (ternary operator)
 
-Выполни рефакторинг кода задачи номер 4 используя тернарный оператор.
+Make code  refactoring of the  task number 4 code using ternary operator.
 
 ```js
 let link = 'https://somesite.com/about';
@@ -89,34 +89,34 @@ if (link.includes('my-site') && !link.endsWith('/')) {
 console.log(link);
 ```
 
-## Example 8 - if...else и логические операторы
+## Example 8 - if...else and logical operators 
 
-Напиши скрипт который будет выводить в консоль браузера строку в зависимости от
-значения переменной `hours`.
+Write a script that will output a string to the browser console depending on
+`hours` variable values.
 
-Если значение переменной `hours`:
+If the value of the variable `hours`:
 
-- меньше `17`, выводи строку `"Pending"`
-- больше либо равно `17` и меньше либо равно 24, выводи строку `"Expires"`
-- больше `24` , выводи строку `"Overdue"`
+- less than `17`, output the string `"Pending"`
+- greater than or equal to `17` and less than or equal to 24, output the string `"Expires"`
+- greater than `24` , output the string `"Overdue"`
 
 ```js
 const hours = 10;
 ```
 
-## Example 9 - Дедлайн сдачи проекта (if...else)
+## Example 9 - Project submission deadline (if...else)
 
 Напиши скрипт для отображения времени дедлайна сдачи проекта. Используй
 конструкцию `if...else`.
 
-- Eсли до дедлайна 0 дней - выведи строку `"Сегодня"`
-- Eсли до дедлайна 1 день - выведи строку `"Завтра"`
-- Eсли до дедлайна 2 дня - выведи строку `"Послезавтра"`
-- Eсли до дедлайна 3+ дней - выведи строку `"Дата в будущем"`
+- If there are 0 days before the deadline - output the string `"Today"`
+- If it's 1 day before the deadline - output the string `"Tomorrow"`
+- If it's 2 days before the deadline - output the string `"The day after tomorrow"`
+- If it's 3+ days before the deadline - print the string `"Date in the future"`
 
 ```js
 const daysUntilDeadline = 5;
-// Пиши код ниже этой строки
+// Write code below this line
 ```
 
 ## Example 10 - Дедлайн сдачи проекта (switch)
