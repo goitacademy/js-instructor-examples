@@ -46,7 +46,7 @@ const names = 'Jacob,William,Solomon,Artemis';
 const phones = '89001234567,89001112233,890055566377,890055566300';
 ```
 
-## Example 5 - Массивы и строки
+## Example 5 - Arrays and Strings 
 
 Write a script that prints to the console all the words of a string except the first and
 the last one. The resulting string must not start or end 
@@ -56,28 +56,28 @@ whitespace character. The script should work for any line.
 const string = 'Welcome to the future';
 ```
 
-## Example 6 - Массивы и строки
+## Example 6 - Arrays and Strings
 
-Напиши скрипт который «разворачивает» строку (обратный порядок букв) и выводит
-ее в консоль.
+Write a script that "unwraps" a string (reverse letter order) and prints
+it to the console.
 
 ```js
 const string = 'Welcome to the future';
 ```
 
-## Example 7 - Сортировка массива с циклом
+## Example 7 - Sorting an array with a loop 
 
-Напиши скрипт сортировки массива строк в алфавитном порядке по первой букве
-элемента.
+Write a script to sort an array of strings alphabetically by the first letter 
+of an element.
 
 ```js
 const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
 ```
 
-## Example 8 - Поиск элемента
+## Example 8 - Search for an element
 
-Напиши скрипт поиска самого маленького числа в массиве. Код должен работать для
-любого массива чисел. Используй цикл для решения задачи.
+Write a script to find the smallest number in an array. The code should work 
+Write a script to find the smallest number in an array. The code should work for any array of numbers. Use a loop to solve problems.
 
 ```js
 const numbers = [2, 17, 94, 1, 23, 37];
