@@ -1,24 +1,24 @@
-# Модуль 2. Занятие 3. Массивы
+# Module 2 - Lesson 3 - Arrays
 
-## Example 1 - Базовые операции с массивом
+## Example 1 - Basic operations with an array
 
-1. Создайте массив `genres` с элементами «Jazz» и «Blues».
-2. Добавьте «Рок-н-ролл» в конец.
-3. Выведите в консоль первый элемент массива.
-4. Выведите в консоль последний элемент массива. Код должен работать для массива
-   произвольной длины.
-5. Удалите первый элемент и выведите его в консоль.
-6. Вставьте «Country» и «Reggae» в начало массива.
+1. Create an array `genres` with elements "Jazz" and "Blues".
+2. Add "Rock and Roll" to the end.
+3. Print the first element of the array to the console.
+4. Print the last element of the array to the console. The code should work for an array
+   random length.
+5. Remove the first element and print it to the console.
+6. Insert "Country" and "Reggae" at the beginning of the array.
 
 ```js
 const genres = ;
 ```
 
-## Example 2 - Массивы и строки
+## Example 2 - Arrays and Strings
 
-Напиши скрипт для вычисления площади прямоугольника со сторонами, значения
-которых хранятся в переменной `values` в виде строки. Значения гарантированно
-разделены пробелом.
+Write a script to calculate the area of a rectangle with sides, whichvalues
+values are stored in the `values` variable as a string. Values guaranteed
+separated by a space.
 
 ```js
 const values = '8 11';
