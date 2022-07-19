@@ -2,8 +2,8 @@
 
 ## Example 1 - Destructuring
 
-Rewrite the function to take a single parameter object instead of a set
-independent arguments.
+Rewrite the function so that it takes one object of the parameter instead of a set
+of independent arguments.
 
 ```js
 function calcBMI(weight, height) {
