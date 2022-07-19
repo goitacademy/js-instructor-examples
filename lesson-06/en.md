@@ -65,20 +65,20 @@ printContactsInfo({
 });
 ```
 
-## Example 3 - Глубокая деструктуризация
+## Example 3 - Deep destructuring
 
-Перепиши функцию так, чтобы она принимала один объект параметров, вместо набора
-независимых аргументов.
+Rewrite the property so that it uses one object's parameter instead of a set
+of independent arguments.
 
 ```js
 function getBotReport(companyName, repairBots, defenceBots) {
   return `${companyName} has ${repairBots + defenceBots} bots in stock`;
 }
 
-// Было
+// It was
 // console.log(getBotReport('Cyberdyne Systems', 150, 50));
 
-// Ожидается
+// Is expected 
 console.log(
   getBotReport({
     companyName: 'Cyberdyne Systems',
@@ -90,7 +90,7 @@ console.log(
 ); // "Cyberdyne Systems has 200 bots in stock"
 ```
 
-## Example 4 - Деструктуризация
+## Example 4 - Destructuring
 
 Перепиши функцию так, чтобы она принимала объект параметров со свойствами
 `companyName` и `stock` и выводила репорт о количестве товаров на складе любой
