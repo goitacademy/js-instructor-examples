@@ -72,10 +72,10 @@ printContactsInfo(
 );
 ```
 
-## Example 6 - Поиск наибольшего элемента
+## Example 6 - Finding the largest element
 
-Напиши функцию `findLargestNumber(numbers)`которая ищет самое большое число в
-массиве.
+Write a function `findLargestNumber(numbers)` that looks for the largest number in
+array.
 
 ```js
 function findLargestNumber(numbers) {}
