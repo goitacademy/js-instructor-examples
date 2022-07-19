@@ -87,15 +87,15 @@ account.deposit(-600, handleSuccess, handleError);
 account.deposit(600, handleSuccess, handleError);
 ```
 
-## Example 3 - Коллбек функции
+## Example 3 - Function callback
 
-Напишите функцию `each(array, callback)`, которая первым параметром ожидает
-массив, а вторым - функцию, которая применится к каждому элементу массива.
-Функция each должна вернуть новый массив, элементами которого будут результаты
-вызова коллбека.
+Write a function `each(array, callback)` that takes as its first parameter
+array, and the second - a function that will be applied to each element of the array.
+The each function must return a new array whose elements will be the results
+of callback call.
 
 ```js
-// Решение
+// Solution
 function each(array, callback) {
   const newArr = [];
   for (const el of array) {
@@ -131,9 +131,8 @@ console.log(
 );
 ```
 
-## Example 4 - Стрелочные функции
-
-Выполните рефакторинг кода используя стрелочные функции.
+## Example 4 - Arrow functions
+Make the code refactoring  using arrow functions.
 
 ```js
 function createProduct(partialProduct, callback) {
@@ -153,9 +152,9 @@ createProduct({ name: '🍎', price: 30, quantity: 3 }, logProduct);
 createProduct({ name: '🍋', price: 20, quantity: 5 }, logTotalPrice);
 ```
 
-## Example 5 - Стрелочные функции
+## Example 5 - Arrow functions
 
-Выполните рефакторинг кода используя стрелочные функции.
+Make the code refactoring  using arrow functions.
 
 ```js
 const TRANSACTION_LIMIT = 1000;
@@ -201,9 +200,9 @@ account.deposit(-600, handleSuccess, handleError);
 account.deposit(600, handleSuccess, handleError);
 ```
 
-## Example 6 - Инлайн стрелочные функции
+## Example 6 - Inline Arrow Functions
 
-Выполните рефакторинг кода используя стрелочные функции.
+Make the code refactoring using arrow functions.
 
 ```js
 function each(array, callback) {
@@ -241,9 +240,9 @@ console.log(
 );
 ```
 
-## Example 7 - Метод forEach
+## Example 7 - forEach method
 
-Выполните рефакторинг кода используя метод `forEach` и стрелочные функции.
+Make the code refactoring using `forEach` method and arrow functions.
 
 ```js
 function logItems(items) {
@@ -257,9 +256,10 @@ logItems(['Mango', 'Poly', 'Ajax']);
 logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
 ```
 
-## Example 8 - Метод forEach
+## Example 8 - forEach method
 
-Выполните рефакторинг кода используя метод `forEach` и стрелочные функции.
+
+Make the code refactoring using `forEach` method and arrow functions.
 
 ```js
 function printContactsInfo({ names, phones }) {
@@ -276,9 +276,9 @@ printContactsInfo({
 });
 ```
 
-## Example 9 - Метод forEach
+## Example 9 - forEach method
 
-Выполните рефакторинг кода используя метод `forEach` и стрелочные функции.
+Make the code refactoring using `forEach` method and arrow functions.
 
 ```js
 function calсulateAverage(...args) {
