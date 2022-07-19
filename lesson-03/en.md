@@ -36,10 +36,10 @@ const fruits = ['🍎', '🍇', '🍑', '🍌', '🍋'];
 
 ## Example 4 -Arrays and Loops 
 
-Напиши скрипт который выводит в консоль имя и телефонный номер пользователя. В
-переменных `names` и `phones` хранятся строки имен и телефонных номеров,
-разделенные запятыми. Порядковый номер имен и телефонов в строках указывают на
-соответствие. Количество имен и телефонов гарантированно одинаковое.
+Write a script that prints the user's name and phone number to the console. 
+The `names` and `phones` variables store strings of names and phone numbers,
+separated by commas. The sequence number of names and phone numbers in the lines indicates a match.  
+ The number of names and phone numbers is guaranteed to be the same.
 
 ```js
 const names = 'Jacob,William,Solomon,Artemis';
