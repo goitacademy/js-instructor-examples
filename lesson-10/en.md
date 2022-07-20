@@ -128,9 +128,9 @@ console.log(myNotes.items);
 
 ## Example 5 - Toggle
 
-Напишите класс `Toggle` который принимает объект настроек `{isOpen: boolean}` и
-объявляет одно свойство `on` - состояние вкл/выкл (true/false). По умолчанию
-значение свойства `on` должно быть `false`.
+Write a `Toggle` class that takes a settings object `{isOpen: boolean}` and
+declares one property `on` - state on/off (true/false). By default
+the value of the `on` property should be `false.
 
 ```js
 const firstToggle = new Toggle({ isOpen: true });
