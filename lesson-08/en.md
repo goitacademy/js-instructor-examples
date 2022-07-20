@@ -1,6 +1,6 @@
-# Модуль 4. Занятие 8. Перебирающие методы массива
+# Module 4 - Lesson 8 - Iterating Array Methods
 
-## Коллекция объектов для всех примеров с автомобилями
+## Collection of objects for all examples with cars
 
 ```js
 const cars = [
@@ -17,10 +17,10 @@ const cars = [
 ];
 ```
 
-## Example 1 - Метод map
+## Example 1 - Map method
 
-Пусть функция `getModels` возвращает массив моделей (поле model) всех
-автомобилей.
+Let the `getModels` function return an array of models (model field) of all
+cars.
 
 ```js
 const getModels = cars => {};
@@ -28,10 +28,10 @@ const getModels = cars => {};
 console.table(getModels(cars));
 ```
 
-## Example 2 - Метод map
+## Example 2 - Map method
 
-Пусть функция `makeCarsWithDiscount` возвращает новый массив объектов с изменным
-значением свойства `price` в зависимости от переданной скидки.
+Let the `makeCarsWithDiscount` function return a new array of objects with a changed
+value of the `price` property depending on the discount passed.
 
 ```js
 const makeCarsWithDiscount = (cars, discount) => {};
@@ -40,10 +40,10 @@ console.table(makeCarsWithDiscount(cars, 0.2));
 console.table(makeCarsWithDiscount(cars, 0.4));
 ```
 
-## Example 3 - Метод filter
+## Example 3 -Filter method
 
-Пусть функция `filterByPrice` возвращает массив автомобилей цена которых меньше
-чем значение параметра `threshold`.
+Let the `filterByPrice` function return an array of cars whose price is less
+than the value of the `threshold` parameter.
 
 ```js
 const filterByPrice = (cars, threshold) => {};
@@ -52,10 +52,10 @@ console.table(filterByPrice(cars, 30000));
 console.table(filterByPrice(cars, 25000));
 ```
 
-## Example 4 - Метод filter
+## Example 4 - Filter method
 
-Пусть функция `getCarsWithDiscount` возвращает массив автомобилей свойство
-onSale которых true.
+Let the `getCarsWithDiscount` function return an array of cars whose
+onSale property is true.
 
 ```js
 const getCarsWithDiscount = cars => {};
