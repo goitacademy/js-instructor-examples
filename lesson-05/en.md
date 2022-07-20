@@ -1,4 +1,4 @@
-# Модуль 3. Lesson 1. Objects
+# Module 3. Lesson 1. Objects
 
 <!-- https://github.com/luxplanjay/js-33-qna/blob/03-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B/js/vehicles.js -->
 
