@@ -66,9 +66,9 @@ console.table(storage.items); // [ '🍎', '🍇', '🍑', '🍌' ]
 
 ## Example 3 - User
 
-Напиши класс `User` который создаёт объект со свойствами `login` и `email`.
-Объяви приватные свойства `#login` и `#email`, доступ к которым сделай через
-геттер и сеттер `login` и `email`.
+Write a class `User` which creates an object with properties `login` and `email`.
+Declare private properties `#login` and `#email`, which can be accessed via
+getter and setter of `login` and `email`.
 
 ```js
 const mango = new User({
@@ -90,11 +90,11 @@ poly.login = 'Polycutie';
 console.log(poly.login); // Polycutie
 ```
 
-## Example 4 - Заметки
+## Example 4 - Notes
 
-Напиши класс `Notes` который управляет коллекцией заметок в свойстве `items`.
-Заметка это объект со свойствами `text` и `priority`. Добавь классу статическое
-свойство `Priority`, в котором будет храниться объект с приоритетами.
+Write a `Notes` class that manages the collection of notes in the `items` property.
+A note is an object with `text` and `priority` properties. Add a static
+property `Priority` to the class, which will store the object with priorities.
 
 ```js
 {
@@ -104,25 +104,25 @@ console.log(poly.login); // Polycutie
 }
 ```
 
-Добавь методы `addNote(note)`, `removeNote(text)` и
+Add methods`addNote(note)`, `removeNote(text)` and
 `updatePriority(text, newPriority)`.
 
 ```js
 const myNotes = new Notes([]);
 
-myNotes.addNote({ text: 'Моя первая заметка', priority: Notes.Priority.LOW });
+myNotes.addNote({ text: 'My first note', priority: Notes.Priority.LOW });
 console.log(myNotes.items);
 
 myNotes.addNote({
-  text: 'Моя вторая заметка',
+  text: 'My second note',
   priority: Notes.Priority.NORMAL,
 });
 console.log(myNotes.items);
 
-myNotes.removeNote('Моя первая заметка');
+myNotes.removeNote('My first note');
 console.log(myNotes.items);
 
-myNotes.updateNote('Моя вторая заметка', Notes.Priority.HIGH);
+myNotes.updateNote('My second note', Notes.Priority.HIGH);
 console.log(myNotes.items);
 ```
 
