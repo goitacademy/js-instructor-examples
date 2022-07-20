@@ -130,7 +130,7 @@ console.log(myNotes.items);
 
 Write a `Toggle` class that takes a settings object `{isOpen: boolean}` and
 declares one property `on` - state on/off (true/false). By default
-the value of the `on` property should be `false.
+the value of the `on` property should be `false`.
 
 ```js
 const firstToggle = new Toggle({ isOpen: true });
