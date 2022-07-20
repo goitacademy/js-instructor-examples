@@ -1,21 +1,21 @@
-# Модуль 5. Занятие 10. Прототипы и классы
+# Module 5 - Lesson 10 - Prototypes and classes
 
-## Example 1 - Блоггер
+## Example 1 - Blogger
 
-Напиши класс `Blogger` для создания обьекта блоггера со следующим свойствами:
+Write a `Blogger` class to create a blogger object with the following properties:
 
-- `email` - почта, строка
-- `age` - возраст, число
-- `numberOfPosts` - кол-во постов, число
-- `topics` - массив тем на которых специализируется блоггер
+- `email` - mail, line
+- `age` - age, number
+- `numberOfPosts` - number of posts, number
+- `topics` - an array of topics the blogger specializes in
 
-Класс ожидает один параметр - объект настроек с одноимёнными свойствами.
+The class expects one parameter - object of settings  with the same name properties.
 
-Добавь метод `getInfo()`, который, возвращает строку:
-`User ${почта} is ${возраст} years old and has ${кол-во постов} posts`.
+Add a `getInfo()` method that returns string:
+`User ${mail} is ${age} years old and has ${number of posts} posts`.
 
-Добавь метод `updatePostCount(value)`, который в параметре `value` принимает
-количество постов которые нужно добавить пользователю.
+Add the `updatePostCount(value)` method, which in the `value` parameter takes
+number of posts to add to the user.
 
 ```js
 const mango = new User({
