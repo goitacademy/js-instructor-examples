@@ -1,4 +1,4 @@
-# Модуль 3 Lesson 6. Destructuring and rest/spread
+# Module 3 Lesson 6. Destructuring and rest/spread
 
 ## Example 1 - Destructuring
 
