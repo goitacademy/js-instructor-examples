@@ -106,8 +106,8 @@ const hours = 10;
 
 ## Example 9 - Project submission deadline (if...else)
 
-Напиши скрипт для отображения времени дедлайна сдачи проекта. Используй
-конструкцию `if...else`.
+Write a script to display the project deadline time. Use
+`if...else` construction.
 
 - If there are 0 days before the deadline - output the string `"Today"`
 - If it's 1 day before the deadline - output the string `"Tomorrow"`
