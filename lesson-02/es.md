@@ -104,13 +104,13 @@ const hours = 10;
 
 ## Ejemplo 9 - Plazo de entrega del proyecto (if...else)
 
-Escriba un script para mostrar la hora de entrega del proyecto. 
+Escriba un script para mostrar la hora de la fecha límite para entregar un proyecto. 
 Utilice la construcción `if...else`.
 
 - Si faltan 0 días - muestra la cadena `"Hoy"`
 - Si falta 1 día - muestra la cadena `"Mañana"`
 - Si faltan 2 días - muestra la cadena `"Pasado mañana"`
-- Si faltan 3+ días - muestra la cadena `"Fecha en el futuro"`
+- Si faltan 3+ días - muestra la cadena `"La fecha en el futuro"`
 
 ```js
 const daysUntilDeadline = 5;
