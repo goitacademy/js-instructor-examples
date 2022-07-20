@@ -39,17 +39,17 @@ poly.updatePostCount(4);
 console.log(poly.getInfo()); // User poly@mail.com is 19 years old and has 21 posts
 ```
 
-## Example 2 - Хранилище
+## Example 2 - Storagе
 
-Напиши класс `Storage` который создаёт объекты для управления складом товаров.
-При вызове будет получать один аргумент - начальный массив товаров, и записывать
-его в свойство `items`.
+Write a `Storage` class that creates objects for managing a warehouse of goods.
+When called, it will receive one argument - the initial array of goods, and write
+it to the `items` property.
 
-Добавь методы класса:
+Add class methods:
 
-- `getItems()` - возвращает массив товаров.
-- `addItem(item)` - получает новый товар и добавляет его к текущим.
-- `removeItem(item)` - получает товар и, если он есть, удаляет его из текущих.
+- `getItems()` - returns an array of products.
+- `addItem(item)` - receives a new product and adds it to the current ones.
+- `removeItem(item)` - receives the product and, if it exists, removes it from the current.
 
 ```js
 const storage = new Storage(['🍎', '🍋', '🍇', '🍑']);
