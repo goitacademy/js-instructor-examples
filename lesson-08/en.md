@@ -63,10 +63,10 @@ const getCarsWithDiscount = cars => {};
 console.table(getCarsWithDiscount(cars));
 ```
 
-## Example 5 - Метод filter
+## Example 5 - Filter method
 
-Пусть функция `getCarsWithType` возвращает массив автомобилей тип которых
-совпадает со значением параметра `type`.
+Let the `getCarsWithType` function return an array of cars whose type
+coincide with the value of the `type` parameter.
 
 ```js
 const getCarsWithType = (cars, type) => {};
@@ -75,7 +75,7 @@ console.table(getCarsWithType(cars, 'suv'));
 console.table(getCarsWithType(cars, 'sedan'));
 ```
 
-## Example 6 - Метод find
+## Example 6 - The find method
 
 ```js
 const getCarByModel = (cars, model) => {};
@@ -84,10 +84,10 @@ console.log(getCarByModel(cars, 'F-150'));
 console.log(getCarByModel(cars, 'CX-9'));
 ```
 
-## Example 7 - Метод sort
+## Example 7 - Sort method
 
-Пусть функция `sortByAscendingAmount` возвращает новый массив автомобилей
-отсортированный по возврастанию значения свойства `amount`.
+Let the `sortByAscendingAmount` function return a new array of cars
+sorted in ascending order by the value of the `amount` property.
 
 ```js
 const sortByAscendingAmount = cars => {};
@@ -95,10 +95,10 @@ const sortByAscendingAmount = cars => {};
 console.table(sortByAscendingAmount(cars));
 ```
 
-## Example 8 - Метод sort
+## Example 8 - Sort method
 
-Пусть функция `sortByDescendingPrice` возвращает новый массив автомобилей
-отсортированный по убыванию значения свойства `price`.
+Let the `sortByDescendingPrice` function return a new array of cars
+sorted in descending order by the value of the `price` property.
 
 ```js
 const sortByDescendingPrice = cars => {};
@@ -106,11 +106,11 @@ const sortByDescendingPrice = cars => {};
 console.table(sortByDescendingPrice(cars));
 ```
 
-## Example 9 - Метод sort
+## Example 9 - Sort method
 
-Пусть функция `sortByModel` возвращает новый массив автомобилей отсортированный
-по названию модели в алфавитном и обратном алфавитном порядке, в засисимости от
-значения параметра `order`.
+Let the `sortByModel` function return a new array of cars sorted
+by model name in alphabetical and reverse alphabetical order, depending on
+the value of the `order` parameter.
 
 ```js
 const sortByModel = (cars, order) => {};
@@ -119,10 +119,10 @@ console.table(sortByModel(cars, 'asc'));
 console.table(sortByModel(cars, 'desc'));
 ```
 
-## Example 10 - Метод reduce
+## Example 10 - Reduce method
 
-Пусть функция `getTotalAmount` возвращает общее количество автомобилей(значение
-свойств `amount`).
+Let the `getTotalAmount` function return the total number of cars (the value
+of the `amount` properties).
 
 ```js
 const getTotalAmount = cars => {};
@@ -130,10 +130,10 @@ const getTotalAmount = cars => {};
 console.log(getTotalAmount(cars));
 ```
 
-## Example 11 - Цепочки методов
+## Example 11 - Method chains
 
-Пусть функция `getAvailableCarNames` возвращает массив моделей автомобилей, но
-только тех, которые сейчас на распродаже.
+Let the `getAvailableCarNames` function return an array of car models, but 
+only those that are currently for sale.
 
 ```js
 const getModelsOnSale = cars => {};
@@ -141,10 +141,11 @@ const getModelsOnSale = cars => {};
 console.table(getModelsOnSale(cars));
 ```
 
-## Example 12 - Цепочки методов
+## Example 12 - Method chains
 
-Пусть функция `getSortedCarsOnSale` возвращает массив автомобилей на распродаже
-(свойство onSale), отсортированных по возрастанию цены.
+
+Let the `getSortedCarsOnSale` function return an array of cars for sale 
+(onSale property), sorted by price ascending.
 
 ```js
 const getSortedCarsOnSale = cars => {};
