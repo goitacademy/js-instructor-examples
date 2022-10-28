@@ -1,6 +1,6 @@
-# Модуль 4. Занятие 8. Перебирающие методы массива
+# Модуль 4. Заняття 8. Перебираючі методи масиву
 
-## Коллекция объектов для всех примеров с автомобилями
+## Колекція об'єктів для всіх прикладів з автомобілями
 
 ```js
 const cars = [
@@ -19,8 +19,8 @@ const cars = [
 
 ## Example 1 - Метод map
 
-Пусть функция `getModels` возвращает массив моделей (поле model) всех
-автомобилей.
+Нехай функція `getModels` повертає масив моделей (поле model) всіх
+автомобілів.
 
 ```js
 const getModels = cars => {};
@@ -30,8 +30,8 @@ console.table(getModels(cars));
 
 ## Example 2 - Метод map
 
-Пусть функция `makeCarsWithDiscount` возвращает новый массив объектов с изменным
-значением свойства `price` в зависимости от переданной скидки.
+Нехай функція `makeCarsWithDiscount` повертає новий масив об'єктів із змінним
+значенням властивості `price` залежно від переданої знижки.
 
 ```js
 const makeCarsWithDiscount = (cars, discount) => {};
@@ -42,8 +42,8 @@ console.table(makeCarsWithDiscount(cars, 0.4));
 
 ## Example 3 - Метод filter
 
-Пусть функция `filterByPrice` возвращает массив автомобилей цена которых меньше
-чем значение параметра `threshold`.
+Нехай функція `filterByPrice` повертає масив автомобілів ціна яких менша
+ніж значення параметра `threshold`.
 
 ```js
 const filterByPrice = (cars, threshold) => {};
@@ -54,8 +54,8 @@ console.table(filterByPrice(cars, 25000));
 
 ## Example 4 - Метод filter
 
-Пусть функция `getCarsWithDiscount` возвращает массив автомобилей свойство
-onSale которых true.
+Нехай функція `getCarsWithDiscount` повертає масив автомобілів властивість
+onSale яких true.
 
 ```js
 const getCarsWithDiscount = cars => {};
@@ -65,8 +65,8 @@ console.table(getCarsWithDiscount(cars));
 
 ## Example 5 - Метод filter
 
-Пусть функция `getCarsWithType` возвращает массив автомобилей тип которых
-совпадает со значением параметра `type`.
+Нехай функція `getCarsWithType` повертає масив автомобілів тип яких
+збігається зі значенням параметра `type`.
 
 ```js
 const getCarsWithType = (cars, type) => {};
@@ -86,8 +86,8 @@ console.log(getCarByModel(cars, 'CX-9'));
 
 ## Example 7 - Метод sort
 
-Пусть функция `sortByAscendingAmount` возвращает новый массив автомобилей
-отсортированный по возврастанию значения свойства `amount`.
+Нехай функція `sortByAscendingAmount` повертає новий масив автомобілів відсортований за 
+зростанням значення якості `amount`.
 
 ```js
 const sortByAscendingAmount = cars => {};
@@ -97,8 +97,8 @@ console.table(sortByAscendingAmount(cars));
 
 ## Example 8 - Метод sort
 
-Пусть функция `sortByDescendingPrice` возвращает новый массив автомобилей
-отсортированный по убыванию значения свойства `price`.
+Нехай функція `sortByDescendingPrice` повертає новий масив автомобілів
+відсортований за зменшенням значення властивості `price`.
 
 ```js
 const sortByDescendingPrice = cars => {};
@@ -108,9 +108,9 @@ console.table(sortByDescendingPrice(cars));
 
 ## Example 9 - Метод sort
 
-Пусть функция `sortByModel` возвращает новый массив автомобилей отсортированный
-по названию модели в алфавитном и обратном алфавитном порядке, в засисимости от
-значения параметра `order`.
+Нехай функція `sortByModel` повертає новий масив автомобілів відсортований
+за назвою моделі в алфавітному та зворотному алфавітному порядку, в залежності від
+значення параметра `order`.
 
 ```js
 const sortByModel = (cars, order) => {};
@@ -121,8 +121,8 @@ console.table(sortByModel(cars, 'desc'));
 
 ## Example 10 - Метод reduce
 
-Пусть функция `getTotalAmount` возвращает общее количество автомобилей(значение
-свойств `amount`).
+Нехай функція `getTotalAmount` повертає загальну кількість автомобілів (значення
+властивостей `amount`).
 
 ```js
 const getTotalAmount = cars => {};
@@ -130,10 +130,10 @@ const getTotalAmount = cars => {};
 console.log(getTotalAmount(cars));
 ```
 
-## Example 11 - Цепочки методов
+## Example 11 - Ланцюжки методів
 
-Пусть функция `getAvailableCarNames` возвращает массив моделей автомобилей, но
-только тех, которые сейчас на распродаже.
+Нехай функція `getAvailableCarNames` повертає масив моделей автомобілів, але
+тільки тих, які зараз на розпродажі.
 
 ```js
 const getModelsOnSale = cars => {};
@@ -141,10 +141,10 @@ const getModelsOnSale = cars => {};
 console.table(getModelsOnSale(cars));
 ```
 
-## Example 12 - Цепочки методов
+## Example 12 - Ланцюжки методів
 
-Пусть функция `getSortedCarsOnSale` возвращает массив автомобилей на распродаже
-(свойство onSale), отсортированных по возрастанию цены.
+Нехай функція `getSortedCarsOnSale` повертає масив автомобілів на розпродажі
+(Властивість onSale), відсортованих за зростанням ціни.
 
 ```js
 const getSortedCarsOnSale = cars => {};

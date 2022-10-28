@@ -1,9 +1,9 @@
-# Модуль 3 Занятие 6. Деструктуризация и rest/spread
+# Модуль 3 Заняття 6. Деструктуризація та rest/spread
 
-## Example 1 - Деструктуризация
+## Example 1 - Деструктуризація
 
-Перепиши функцию так, чтобы она принимала один объект параметров, вместо набора
-независимых аргументов.
+Перепиши функцію так, щоб вона приймала один об'єкт параметрів замість набору
+незалежних аргументів.
 
 ```js
 function calcBMI(weight, height) {
@@ -12,12 +12,12 @@ function calcBMI(weight, height) {
   return Number((numericWeight / numericHeight ** 2).toFixed(1));
 }
 
-// Было
+// Було
 // console.log(calcBMI('88,3', '1.75'));
 // console.log(calcBMI('68,3', '1.65'));
 // console.log(calcBMI('118,3', '1.95'));
 
-// Ожидается
+// Очікується
 console.log(
   calcBMI({
     weight: '88,3',
@@ -38,10 +38,10 @@ console.log(
 );
 ```
 
-## Example 2 - Деструктуризация
+## Example 2 - Деструктуризація
 
-Перепиши функцию так, чтобы она принимала один объект параметров, вместо набора
-независимых аргументов.
+Перепиши функцію так, щоб вона приймала один об'єкт параметрів замість набору
+незалежних аргументів.
 
 ```js
 function printContactsInfo(names, phones) {
@@ -52,33 +52,33 @@ function printContactsInfo(names, phones) {
   }
 }
 
-// Было
+// Було
 // printContactsInfo(
 //   'Jacob,William,Solomon,Artemis',
 //   '89001234567,89001112233,890055566377,890055566300',
 // );
 
-// Ожидается
+// Очікується
 printContactsInfo({
   names: 'Jacob,William,Solomon,Artemis',
   phones: '89001234567,89001112233,890055566377,890055566300',
 });
 ```
 
-## Example 3 - Глубокая деструктуризация
+## Example 3 - Глибока деструктуризація
 
-Перепиши функцию так, чтобы она принимала один объект параметров, вместо набора
-независимых аргументов.
+Перепиши функцію так, щоб вона приймала один об'єкт параметрів замість набору
+незалежних аргументів.
 
 ```js
 function getBotReport(companyName, repairBots, defenceBots) {
   return `${companyName} has ${repairBots + defenceBots} bots in stock`;
 }
 
-// Было
+// Було
 // console.log(getBotReport('Cyberdyne Systems', 150, 50));
 
-// Ожидается
+// Очікується
 console.log(
   getBotReport({
     companyName: 'Cyberdyne Systems',
@@ -90,14 +90,14 @@ console.log(
 ); // "Cyberdyne Systems has 200 bots in stock"
 ```
 
-## Example 4 - Деструктуризация
+## Example 4 - Деструктуризація
 
-Перепиши функцию так, чтобы она принимала объект параметров со свойствами
-`companyName` и `stock` и выводила репорт о количестве товаров на складе любой
-компании.
+Перепиши функцію так, щоб вона приймала об'єкт параметрів із властивостями
+`companyName` та `stock` та виводила репорт про кількість товарів на складі будь-якої
+компанії.
 
 ```js
-// Решение
+// Рішення
 function getStockReport({ companyName, stock }) {
   let total = 0;
   for (const value of Object.values(stock)) {
@@ -128,14 +128,14 @@ console.log(
 ); // "Belacci has 35 item in stock"
 ```
 
-## Example 5 - Операция spread
+## Example 5 - Операція spread
 
-Дополни функцию `createContact(partialContact)` так, чтобы она возвращала новый
-объект контакта с добавленными свойствами `id` и `createdAt`, а также `list` со
-значением "default" если в `partialContact` нет такого свойства.
+Доповни функцію `createContact(partialContact)` так, щоб вона повертала новий
+об'єкт контакту з доданими властивостями `id` та `createdAt`, а також `list` зі
+значенням "default" якщо в `partialContact` немає такої властивості.
 
 ```js
-// Решение
+// Рішення
 function createContact(partialContact) {
   return {
     list: 'default',
@@ -164,13 +164,13 @@ function generateId() {
 }
 ```
 
-## Example 6 - Операция rest
+## Example 6 - Операція rest
 
-Напиши функцию `transformUsername(user)` так, чтобы она возвращала новый обьект
-со свойством `fullName`, вместо `firstName` и `lastName`.
+Напиши функцію `transformUsername(user)` так, щоб вона повертала новий об'єкт із властивістю
+`fullName`, замість `firstName` та `lastName`.
 
 ```js
-// Решение
+// Рішення
 function transformUsername({ firstName, lastName, ...otherProps }) {
   return {
     fullName: `${firstName} ${lastName}`,
